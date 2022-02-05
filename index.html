@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Fri Jan 28 2022 03:21:54 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="61df7c93d6e67f39e53849ae" data-wf-site="61df7c93d6e67f071b3849ad">
+<html
+    data-wf-page="61df7c93d6e67f39e53849ae"
+    data-wf-site="61df7c93d6e67f071b3849ad"
+    style="overflow-x: hidden"
+>
     <head>
         <meta charset="utf-8" />
         <title>Beko_HealthyKitchen_Comp_v1</title>
@@ -9,7 +13,11 @@
         <meta content="Webflow" name="generator" />
         <link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+        <link href="css/extra_modal.css" rel="stylesheet" type="text/css" />
         <link href="css/beko-hk-comp-v1.webflow.css" rel="stylesheet" type="text/css" />
+        <!-- MOBILE RESPONSIVE CSS -->
+        <link rel="stylesheet" href="css/responsive.css" class="css" />
+        <link rel="stylesheet" href="css/custom.css" class="css" />
         <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
         <script type="text/javascript">
             !(function (o, c) {
@@ -29,6 +37,10 @@
                 color: #ffffff;
                 text-shadow: none;
             }
+
+            .d-none {
+                display: none;
+            }
         </style>
     </head>
     <body class="body">
@@ -39,7 +51,7 @@
         >
             <div class="modal-1">
                 <div class="grp-modal-1 mb40">
-                    <div class="p1-left">Modal Title</div>
+                    <div class="p1-left" id="video_title"></div>
                     <a
                         data-w-id="0e2b36d3-7270-24b4-1bad-315f7fc3fe10"
                         href="#"
@@ -48,58 +60,140 @@
                             src="images/icn-cross.svg"
                             alt="Cross Mark in Black"
                             class="img-close"
-                    /></a>
+                        />
+                    </a>
                 </div>
                 <div
                     style="padding-top: 56.17021276595745%"
                     class="embed_video w-video w-embed"
                 >
                     <iframe
+                        src=""
                         class="embedly-embed"
-                        src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F1lzMiQsXRn4%3Fstart%3D5%26feature%3Doembed%26start%3D5&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1lzMiQsXRn4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F1lzMiQsXRn4%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
-                        scrolling="no"
-                        title="The Beko Fresh Produce Promise Campaign - (May 27th - September 7th, 2021)"
-                    ></iframe>
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        id="video_modal"
+                        width="1920"
+                        height="1080"
+                        style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        "
+                        title="Beko &amp;ndash; What is a Healthy Kitchen?"
+                    >
+                    </iframe>
                 </div>
-                <div class="p3-left-reg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
+                <div class="p3-left-reg" id="video_description"></div>
             </div>
         </div>
 
         <div style="opacity: 0" class="modals_content">
             <div class="modal-1">
                 <div class="grp-modal-1 mb40">
-                    <div class="p1-left">Modal Title</div>
+                    <div class="p1-left" id="modal_title"></div>
                     <a
                         data-w-id="bd7133ff-b787-86f3-bc8f-bce3b1faaf7d"
                         href="#"
                         class="btn-close w-inline-block"
-                        ><img
+                    >
+                        <img
                             src="images/icn-cross.svg"
                             alt="Cross Mark in Black"
                             class="img-close"
-                    /></a>
+                        />
+                    </a>
                 </div>
-                <img
-                    src="images/image_5.jpg"
-                    loading="lazy"
-                    sizes="100vw"
-                    srcset="
-                        images/image_5-p-500.jpeg   500w,
-                        images/image_5-p-800.jpeg   800w,
-                        images/image_5-p-1080.jpeg 1080w,
-                        images/image_5-p-1600.jpeg 1600w,
-                        images/image_5-p-2000.jpeg 2000w,
-                        images/image_5.jpg         2400w
-                    "
-                    alt=""
-                    class="image-12"
-                />
-                <div class="p3-left-reg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="imageVideoModal" style="height: 664px">
+                    <img
+                        src=""
+                        loading="lazy"
+                        style="width: 100%; height: 100%"
+                        id="modal_image"
+                        alt=""
+                        class="image-12"
+                    />
+                    <iframe
+                        src=""
+                        class="embedVideo"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        id="modal_video"
+                        style="width: 100%; height: 100%"
+                        title="Beko &amp;ndash; What is a Healthy Kitchen?"
+                    >
+                    </iframe>
+                </div>
+                <div class="p3-left-reg" id="modal_description"></div>
+                <a href="" target="_blank" id="view_post_link"></a>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-box healthy-kitchen">
+                <div class="icon">
+                    <img
+                        src="images/icn-cross.svg"
+                        alt="Cross Mark in Black"
+                        class="img-close"
+                    />
+                </div>
+                <div class="modal-body">
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <div class="mdl-head">
+                                <div class="mdl-icon">
+                                    <img src="./images/heart blue.png" alt="" />
+                                </div>
+                                <div class="mdl-line"></div>
+                                <div class="heading-text">
+                                    <h5>2021 Inaugural Member Profile</h5>
+                                </div>
+                            </div>
+                            <div class="mdl-mid-cont">
+                                <div class="iamge-slide">
+                                    <img src="" id="profile_image" alt="" />
+                                </div>
+                                <div class="icon-slide">
+                                    <a href="" id="linked_in">
+                                        <img src="./images/linkedIn_PNG11.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mdl-footer">
+                                <div class="mdl-info">
+                                    <h3 id="council_member_name"></h3>
+                                    <span id="title"></span>
+                                    <span>
+                                        <strong id="showBusiness"
+                                            >Business Website:</strong
+                                        >
+                                        <a href="" id="business_website1" target="_blank">
+                                        </a>
+                                        <a href="" id="business_website2" target="_blank">
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <strong>Email: </strong>
+                                        <a href="#" id="email1"> </a>
+                                        <a href="#" id="email2"> </a>
+                                    </span>
+                                    <span>
+                                        <strong>Residence:</strong>
+                                        <span id="residence"></span>
+                                    </span>
+                                </div>
+                                <div class="mdl-text" id="info"></div>
+                            </div>
+                            <div class="mdl-footer-line">
+                                <div class="mdl-line"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -278,7 +372,7 @@
                     data-w-id="2f2d4db0-f01b-82e4-bd84-49670a619d11"
                     class="scroll_progress_bar"
                 ></div>
-                <div class="content centered">
+                <div class="content centered resp-d-none">
                     <img
                         src="images/Scroll-White-1---Copy---Copy.gif"
                         style="opacity: 0"
@@ -316,7 +410,7 @@
                         <div
                             data-w-id="75afc7b1-fca0-5357-fa28-5052cbcf25f6"
                             data-animation-type="lottie"
-                            data-src="documents/top_video_frame_reduced_1080_1_19_1_24_v2.json"
+                            data-src=""
                             data-loop="0"
                             data-direction="1"
                             data-autoplay="0"
@@ -325,21 +419,22 @@
                             data-default-duration="17.392393897756676"
                             data-duration="0"
                             id="w-node-_75afc7b1-fca0-5357-fa28-5052cbcf25f6-e53849ae"
-                            class="lottie"
+                            class="lottie lottie-resp"
                         ></div>
                         <a
                             id="w-node-_9b0232bb-bf1d-cb1b-c10d-7f7db730d15d-e53849ae"
                             data-w-id="9b0232bb-bf1d-cb1b-c10d-7f7db730d15d"
                             href="#"
-                            class="beko_button margin_b_35vh margin_r_140px w-button"
-                            >View Full Video</a
+                            class="beko_button margin_b_35vh margin_r_140px w-button addFullVideo"
                         >
+                            View Full Video
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="top" class="section_sticky_content">
+        <div id="top" class="section_sticky_content resp-overflow">
             <div class="section_sticky_subnav responsive wf-section">
                 <div
                     data-w-id="f8be96df-185c-a0be-aa62-53f50226dfa1"
@@ -564,10 +659,7 @@
                             >
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a
-                                href="#Partnerships"
-                                id="Partnerships"
-                                class="beko_button subnav w-button"
+                            <a href="#Partnerships" class="beko_button subnav w-button"
                                 >Partners</a
                             >
                         </div>
@@ -794,10 +886,7 @@
                             >
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a
-                                href="#Partnerships"
-                                id="Partnerships"
-                                class="beko_button subnav w-button"
+                            <a href="#Partnerships" class="beko_button subnav w-button"
                                 >Partners</a
                             >
                         </div>
@@ -807,20 +896,20 @@
             <div
                 id="about"
                 data-w-id="406637bb-0321-582b-fe05-ae9005ce4fae"
-                class="track wf-section"
+                class="track wf-section pt-0 pb-0"
             >
                 <div class="camera">
                     <div
                         data-w-id="02df7057-03e7-5bda-57ad-4f77b6bc5d1e"
-                        class="scroll_progress_bar horizontal_section_scroll"
+                        class="scroll_progress_bar horizontal_section_scroll resp-d-none"
                     ></div>
-                    <div class="frame">
-                        <div class="item">
+                    <div class="frame frame-resp">
+                        <div class="item item-resp-card">
                             <div
                                 id="w-node-_6288b480-cb38-9965-92c9-b36568955c24-e53849ae"
-                                class="a-block"
+                                class="a-block content-a-block-resp"
                             >
-                                <div class="content_block">
+                                <div class="content_block content_block_resp">
                                     <div
                                         data-w-id="6a9b3ff6-82d0-6bf9-583f-1b3b1d3a8bf2"
                                         data-animation-type="lottie"
@@ -832,14 +921,14 @@
                                         data-renderer="svg"
                                         data-default-duration="1.9833333333333334"
                                         data-duration="0"
-                                        class="lottie-animation"
+                                        class="lottie-animation resp-d-none"
                                     ></div>
-                                    <h2 class="heading m white">
+                                    <h2 class="heading m white heading-resp">
                                         It starts with a foundation of revolutionary,
                                         energy-saving appliances.
                                     </h2>
                                     <div class="spacer _16px"></div>
-                                    <div class="body_text m white">
+                                    <div class="body_text m white content-resp">
                                         Our products are purposefully engineered to make
                                         it easier for our customers to lead healthier,
                                         happier lives. They begin their life being
@@ -856,20 +945,22 @@
                                 </div>
                                 <div class="color_background"></div>
                             </div>
-                            <h3
-                                id="w-node-_5dd7a44f-b54b-76a4-40d5-505d5edd15ab-e53849ae"
-                                class="headings font-color-black drop_shadow padding_l"
-                            >
-                                <strong class="bold-text"
-                                    >What goes into making a Healthy Kitchen?</strong
+                            <div class="bg-igame-cont-resp">
+                                <h3
+                                    id="w-node-_5dd7a44f-b54b-76a4-40d5-505d5edd15ab-e53849ae"
+                                    class="headings font-color-black drop_shadow padding_l"
                                 >
-                            </h3>
-                            <h3
-                                id="w-node-_7bded22a-c1d5-8c14-13e4-b467f71ddc8c-e53849ae"
-                                class="heading xl dark_blue position_relative"
-                            >
-                                What goes into making a Healthy Kitchen?
-                            </h3>
+                                    <strong class="bold-text"
+                                        >What goes into making a Healthy Kitchen?</strong
+                                    >
+                                </h3>
+                                <h3
+                                    id="w-node-_7bded22a-c1d5-8c14-13e4-b467f71ddc8c-e53849ae"
+                                    class="heading xl dark_blue position_relative"
+                                >
+                                    What goes into making a Healthy Kitchen?
+                                </h3>
+                            </div>
                             <img
                                 src="images/Panel-1_Lifestyle.png"
                                 loading="lazy"
@@ -882,15 +973,15 @@
                                     images/Panel-1_Lifestyle.png        1582w
                                 "
                                 alt=""
-                                class="background_image_1"
+                                class="background_image_1 background_image_resp"
                             />
                         </div>
-                        <div class="item">
+                        <div class="item item-resp-card">
                             <div
                                 id="w-node-fcf3519d-7d09-1fd8-2712-5f7059f14f75-e53849ae"
-                                class="a-block"
+                                class="a-block content-a-block-resp"
                             >
-                                <div class="content_block">
+                                <div class="content_block content_block_resp">
                                     <div
                                         data-w-id="ae7ded92-5569-7f53-8ba8-ed0069419f89"
                                         data-animation-type="lottie"
@@ -902,14 +993,14 @@
                                         data-renderer="svg"
                                         data-default-duration="1.5333333333333334"
                                         data-duration="0"
-                                        class="lottie-animation"
+                                        class="lottie-animation resp-d-none"
                                     ></div>
-                                    <h2 class="heading m white">
+                                    <h2 class="heading m white heading-resp">
                                         We work with a select group of like-minded kitchen
                                         designers to bring these spaces to life.
                                     </h2>
                                     <div class="spacer _16px"></div>
-                                    <div class="body_text m white">
+                                    <div class="body_text m white content-resp">
                                         Product design and kitchen design go hand in hand,
                                         which is why we bring our kitchen designers in at
                                         the beginning of the process to help guide our
@@ -936,15 +1027,15 @@
                                     images/Beko1767-copy.jpg         1382w
                                 "
                                 alt=""
-                                class="background_image_2"
+                                class="background_image_2 background_image_resp"
                             />
                         </div>
-                        <div class="item">
+                        <div class="item item-resp-card" id="dot_3">
                             <div
                                 id="w-node-ff17f205-042f-7ac2-8209-7915a71edc6a-e53849ae"
-                                class="a-block"
+                                class="a-block content-a-block-resp"
                             >
-                                <div class="content_block">
+                                <div class="content_block content_block_resp">
                                     <div
                                         data-w-id="c4e28c26-6fe6-f9fb-7d52-5450f3a62025"
                                         data-animation-type="lottie"
@@ -956,15 +1047,15 @@
                                         data-renderer="svg"
                                         data-default-duration="1.5333333333333334"
                                         data-duration="0"
-                                        class="lottie-animation"
+                                        class="lottie-animation resp-d-none"
                                     ></div>
-                                    <h2 class="heading m white">
+                                    <h2 class="heading m white heading-resp">
                                         We partner with some of the world’s foremost
                                         nutritionists to understand the best things to
                                         prepare in a Healthy Kitchen.
                                     </h2>
                                     <div class="spacer _16px"></div>
-                                    <div class="body_text m white">
+                                    <div class="body_text m white content-resp">
                                         Our partnership with Dole Food Company is one such
                                         example. Dole and Beko share twin commitment to
                                         sustainable, healthy living and bringing our two
@@ -1002,10 +1093,10 @@
                                     images/Beko_Fridge_1834308025x_cropped.jpg         3007w
                                 "
                                 alt=""
-                                class="background_image_3"
+                                class="background_image_3 background_image_resp"
                             />
                         </div>
-                        <div class="item">
+                        <div class="item item-resp-card" id="dot_4">
                             <img
                                 src="images/Health_Planet_Sustainability_EarthDay_1920x600.png"
                                 loading="lazy"
@@ -1017,13 +1108,13 @@
                                     images/Health_Planet_Sustainability_EarthDay_1920x600.png       1920w
                                 "
                                 alt=""
-                                class="background_image_4"
+                                class="background_image_4 background_image_resp"
                             />
                             <div
                                 id="w-node-be72102e-5e07-54d0-38bb-0afbb246c2e2-e53849ae"
-                                class="a-block"
+                                class="a-block content-a-block-resp"
                             >
-                                <div class="content_block">
+                                <div class="content_block content_block_resp">
                                     <div
                                         data-w-id="eef4ac13-1eb6-d98b-264b-ce74d9b7a015"
                                         data-animation-type="lottie"
@@ -1035,14 +1126,14 @@
                                         data-renderer="svg"
                                         data-default-duration="1.5333333333333334"
                                         data-duration="0"
-                                        class="lottie-animation"
+                                        class="lottie-animation resp-d-none"
                                     ></div>
-                                    <h2 class="heading m white">
+                                    <h2 class="heading m white heading-resp">
                                         You can’t have a Healthy Kitchen without a healthy
                                         planet.
                                     </h2>
                                     <div class="spacer _16px"></div>
-                                    <div class="body_text m white">
+                                    <div class="body_text m white content-resp">
                                         Beko is firmly committed to sustainability and the
                                         long-term health of our planet. But we can’t do it
                                         alone. It is the bringing together of like-minded
@@ -1130,7 +1221,7 @@
                     />
                 </div>
                 <div id="hk_project" class="section is--header">
-                    <div class="container is--header">
+                    <div class="container is--header p-0">
                         <div class="header_text">
                             <div class="header_text-wrap">
                                 <div
@@ -1168,17 +1259,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sticky-circle_wrap">
+                        <div class="mobile_sticky_circle"></div>
+                        <div class="sticky-circle_wrap sticky_circle_wrap_resp">
                             <div class="sticky-circle">
-                                <div class="sticky-circle_element">
+                                <div class="sticky-circle_element sticky-circle-cu">
                                     <div
                                         id="w-node-_9a22f14f-ea94-529f-e90e-22d258734fa1-e53849ae"
                                         data-w-id="9a22f14f-ea94-529f-e90e-22d258734fa1"
-                                        class="div-block-11"
+                                        class="div-block-11 sticky_text_resp"
                                     >
                                         <h2
                                             id="w-node-_4665eee6-3407-f528-f7a8-d7a39a9d5889-e53849ae"
-                                            class="heading m white position_relative"
+                                            class="heading m white sticky_heading_resp position_relative"
                                         >
                                             The Healthy Kitchen Projects
                                         </h2>
@@ -1197,12 +1289,12 @@
                                             projects that are currently in the works:
                                         </div>
                                         <div class="spacer _48px"></div>
-                                        <div class="div-block-15">
+                                        <div class="div-block-15 stick_btn_resp">
                                             <a
                                                 id="w-node-_58719402-b616-69bf-9e61-372a1563f128-e53849ae"
                                                 data-w-id="58719402-b616-69bf-9e61-372a1563f128"
                                                 href="#"
-                                                class="beko_button secondary teal w-button"
+                                                class="beko_button secondary teal w-button addTrailerVideo"
                                                 >View Trailer Video</a
                                             >
                                             <a
@@ -1215,7 +1307,7 @@
                                     </div>
                                     <div
                                         id="w-node-eace7050-deea-0550-b154-5c38baa8f7b0-e53849ae"
-                                        class="gradient_top_bottom"
+                                        class="gradient_top_bottom graient_n"
                                     ></div>
                                     <img
                                         src="images/qKWn1l9q.jpeg"
@@ -1230,15 +1322,15 @@
                                             images/qKWn1l9q.jpeg        1920w
                                         "
                                         alt=""
-                                        class="sticky-circle_img"
+                                        class="sticky-circle_img sticky_img_resp"
                                     />
                                     <div
                                         id="w-node-ff62fb86-d6d2-25cf-a436-3b5321325454-e53849ae"
-                                        class="w-layout-grid grid-coucil-sketches"
+                                        class="w-layout-grid grid-coucil-sketches council_resp"
                                     >
                                         <div
                                             id="w-node-_43d509a4-2bf4-4839-50fe-f3f5d5ba6e0c-e53849ae"
-                                            class="wrapper_grid_image flex"
+                                            class="wrapper_grid_image flex wrapper_image_resp"
                                         >
                                             <img
                                                 src="images/line-drawing-interior-design-software-chief-architect-home-and-ideas-room-app.jpg"
@@ -1272,7 +1364,7 @@
                                         </div>
                                         <div
                                             id="w-node-_90567f50-9722-df35-e222-bb1531dec4a1-e53849ae"
-                                            class="wrapper_grid_image flex"
+                                            class="wrapper_grid_image flex wrapper_image_resp"
                                         >
                                             <img
                                                 src="images/line-drawing-interior-design-software-chief-architect-home-and-ideas-room-app.jpg"
@@ -1306,7 +1398,7 @@
                                         </div>
                                         <div
                                             id="w-node-c47e58b7-e206-ea02-e924-c6c11e587f61-e53849ae"
-                                            class="wrapper_grid_image flex"
+                                            class="wrapper_grid_image flex wrapper_image_resp"
                                         >
                                             <img
                                                 src="images/line-drawing-interior-design-software-chief-architect-home-and-ideas-room-app.jpg"
@@ -1337,7 +1429,7 @@
                                         </div>
                                         <div
                                             id="w-node-d3ba0f99-054a-8837-e568-50c1bca62a49-e53849ae"
-                                            class="wrapper_grid_image flex"
+                                            class="wrapper_grid_image flex wrapper_image_resp"
                                         >
                                             <img
                                                 src="images/line-drawing-interior-design-software-chief-architect-home-and-ideas-room-app.jpg"
@@ -1400,7 +1492,8 @@
                                 id="w-node-_7d86efe7-9647-a05a-48db-f0809a113598-e53849ae"
                                 href="#"
                                 class="image_icon_play w-inline-block"
-                                ><img
+                            >
+                                <img
                                     src="images/pngaaa.com-177719.png"
                                     loading="lazy"
                                     sizes="48px"
@@ -1410,7 +1503,8 @@
                                     "
                                     alt=""
                                     class="image-8"
-                            /></a>
+                                />
+                            </a>
                         </div>
                         <div class="copy_block hk_council_intro">
                             <div class="content_block desktop">
@@ -1433,9 +1527,10 @@
                                     <a
                                         data-w-id="1a3b07df-1e3a-ef11-64da-2e40b4506913"
                                         href="#"
-                                        class="beko_button no_margin_bottom margin_right w-button"
-                                        >Watch Video</a
+                                        class="beko_button no_margin_bottom margin_right w-button addWatchVideo"
                                     >
+                                        Watch Video
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1492,7 +1587,8 @@
                                             id="w-node-f664c240-dd89-f804-3979-0afc53095252-e53849ae"
                                             href="#"
                                             class="link-block w-inline-block"
-                                            ><img
+                                        >
+                                            <img
                                                 src="images/kitchen_render_cropped-copy.jpg"
                                                 loading="lazy"
                                                 sizes="100vw"
@@ -1503,7 +1599,8 @@
                                                 "
                                                 alt=""
                                                 class="image-10"
-                                        /></a>
+                                            />
+                                        </a>
                                         <a
                                             id="w-node-f664c240-dd89-f804-3979-0afc53095254-e53849ae"
                                             href="#"
@@ -1522,7 +1619,8 @@
                                             id="w-node-f664c240-dd89-f804-3979-0afc53095256-e53849ae"
                                             href="#"
                                             class="wrapper_grid_image w-inline-block"
-                                            ><img
+                                        >
+                                            <img
                                                 src="images/depositphotos_48856007-stock-photo-wireframe-kitchen.jpg"
                                                 loading="lazy"
                                                 sizes="100vw"
@@ -1532,7 +1630,8 @@
                                                 "
                                                 alt=""
                                                 class="image-9"
-                                        /></a>
+                                            />
+                                        </a>
                                         <a
                                             id="w-node-f664c240-dd89-f804-3979-0afc53095258-e53849ae"
                                             href="#"
@@ -2174,7 +2273,7 @@
                     <div class="spacer _160px trasnparent"></div>
                 </div>
                 <div class="section is--grid">
-                    <div class="container is--grid">
+                    <div class="container is--grid p-0">
                         <div class="grid_text-wrap w-dyn-list">
                             <div role="list" class="grid_text-list w-dyn-items">
                                 <div role="listitem" class="grid_text-item w-dyn-item">
@@ -2195,7 +2294,7 @@
                             <div class="grid_wrapper w-dyn-list">
                                 <div
                                     role="list"
-                                    class="grid_list w-dyn-items"
+                                    class="grid_list w-dyn-items m-0 p-0"
                                     id="hkc_image"
                                 >
                                     <!-- HERE DATA WILL BE LOADED FROM JSON FILE LOCATED: js/load_data.js -->
@@ -2207,7 +2306,7 @@
                             <div id="appliances" class="grid_wrapper w-dyn-list">
                                 <div
                                     role="list"
-                                    class="grid_list w-dyn-items"
+                                    class="grid_list w-dyn-items m-0 p-0"
                                     id="appliances_images"
                                 >
                                     <!-- HERE DATA WILL BE LOADED FROM JSON FILE LOCATED: js/load_data.js -->
@@ -2219,7 +2318,7 @@
                             <div id="recipes" class="grid_wrapper is--alt w-dyn-list">
                                 <div
                                     role="list"
-                                    class="grid_list w-dyn-items"
+                                    class="grid_list w-dyn-items m-0 p-0"
                                     id="recipe_images"
                                 >
                                     <!-- HERE DATA WILL BE LOADED FROM JSON FILE LOCATED: js/load_data.js  -->
@@ -2239,54 +2338,59 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    id="Partnerships"
-                    data-w-id="281a03c8-a42e-0833-c0fc-712ddf7a2836"
-                    style="opacity: 0"
-                    class="section_full_background_image wf-section"
-                >
+                <div class="pt">
                     <div
-                        id="w-node-_281a03c8-a42e-0833-c0fc-712ddf7a2837-e53849ae"
-                        class="container-_global w-container"
+                        id="Partnerships"
+                        data-w-id="281a03c8-a42e-0833-c0fc-712ddf7a2836"
+                        style="opacity: 0"
+                        class="section_full_background_image dole-back wf-section partnership"
                     >
                         <div
-                            data-w-id="281a03c8-a42e-0833-c0fc-712ddf7a2838"
-                            style="opacity: 0"
-                            class="copy_block news_signup"
+                            id="w-node-_281a03c8-a42e-0833-c0fc-712ddf7a2837-e53849ae"
+                            class="container-_global w-container"
                         >
-                            <div class="content_block align_center">
-                                <h1 class="heading xl white">Partners</h1>
-                                <div class="spacer _16px"></div>
-                                <div class="body_text font-color-white align-center">
-                                    Beko and Dole have signed a strategic alliance
-                                    agreement that brings two of the world’s most
-                                    health-minded and <br />sustainable brands together to
-                                    make the American kitchen a healthier, more
-                                    earth-friendly place in 2022 and beyond.
+                            <div
+                                data-w-id="281a03c8-a42e-0833-c0fc-712ddf7a2838"
+                                style="opacity: 0"
+                                class="copy_block news_signup partnership-content"
+                            >
+                                <div class="content_block partner_cont align_center">
+                                    <h1 class="heading xl white">Partners</h1>
+                                    <hr />
+                                    <div class="spacer _16px resp-d-none"></div>
+                                    <div
+                                        class="partner_text body_text font-color-white align-center"
+                                    >
+                                        Beko and Dole have signed a strategic alliance
+                                        agreement that brings two of the world’s most
+                                        health-minded and <br />sustainable brands
+                                        together to make the American kitchen a healthier,
+                                        more earth-friendly place in 2022 and beyond.
+                                    </div>
+                                    <div class="spacer _32px resp-d-none"></div>
+                                    <img
+                                        src="images/336-3360136_dole-logo-500-dole-logo-png-white.png"
+                                        loading="lazy"
+                                        alt=""
+                                        class="image-17 dole-logo"
+                                    />
+                                    <div class="spacer _16px resp-d-none"></div>
+                                    <a
+                                        data-w-id="65a8630a-8178-5920-2fc4-ed52b7498bab"
+                                        href="#"
+                                        class="beko_button secondary teal postion_y_48px w-button"
+                                        >Learn More</a
+                                    >
                                 </div>
-                                <div class="spacer _32px"></div>
-                                <img
-                                    src="images/336-3360136_dole-logo-500-dole-logo-png-white.png"
-                                    loading="lazy"
-                                    alt=""
-                                    class="image-17"
-                                />
-                                <div class="spacer _16px"></div>
-                                <a
-                                    data-w-id="65a8630a-8178-5920-2fc4-ed52b7498bab"
-                                    href="#"
-                                    class="beko_button secondary teal postion_y_48px w-button"
-                                    >Learn More</a
-                                >
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="spacer _160px hidden"></div>
+            <div class="spacer _160px hidden resp-d-none"></div>
         </div>
 
-        <div class="spacer _160px"></div>
+        <div class="spacer _160px resp-d-none"></div>
 
         <div id="tools" class="section_designer_tools background_color_white wf-section">
             <div class="container-_global desktop w-container">
@@ -2294,44 +2398,60 @@
                 <div class="spacer _56px"></div>
                 <div class="div_flex flex_horizontal">
                     <div class="div_flex flex_vertical">
-                        <img
-                            src="images/brochuremaker.png"
-                            loading="lazy"
-                            alt=""
-                            class="icon_designer_tools _64px"
-                        />
-                        <div class="spacer _32px"></div>
-                        <div class="heading s blue">Brochure Maker</div>
+                        <a href="https://www.beko.com/us-en/brochure-maker">
+                            <img
+                                src="images/brochuremaker.png"
+                                loading="lazy"
+                                alt=""
+                                class="icon_designer_tools _64px"
+                            />
+                        </a>
+                        <a href="https://www.beko.com/us-en/brochure-maker">
+                            <div class="spacer _32px"></div>
+                            <div class="heading s blue">Brochure Maker</div>
+                        </a>
                     </div>
                     <div class="div_flex flex_vertical">
-                        <img
-                            src="images/brochuremaker.png"
-                            loading="lazy"
-                            alt=""
-                            class="icon_designer_tools _64px"
-                        />
-                        <div class="spacer _32px"></div>
-                        <div class="heading s blue">Spec Library</div>
+                        <a href="https://www.beko.com/us-en/spec-library">
+                            <img
+                                src="images/brochuremaker.png"
+                                loading="lazy"
+                                alt=""
+                                class="icon_designer_tools _64px"
+                            />
+                        </a>
+                        <a href="https://www.beko.com/us-en/spec-library">
+                            <div class="spacer _32px"></div>
+                            <div class="heading s blue">Spec Library</div>
+                        </a>
                     </div>
                     <div class="div_flex flex_vertical">
-                        <img
-                            src="images/brochuremaker.png"
-                            loading="lazy"
-                            alt=""
-                            class="icon_designer_tools _64px"
-                        />
-                        <div class="spacer _32px"></div>
-                        <div class="heading s blue">CAD Library</div>
+                        <a href="https://www.beko.com/us-en/cad-library">
+                            <img
+                                src="images/brochuremaker.png"
+                                loading="lazy"
+                                alt=""
+                                class="icon_designer_tools _64px"
+                            />
+                        </a>
+                        <a href="https://www.beko.com/us-en/cad-library">
+                            <div class="spacer _32px"></div>
+                            <div class="heading s blue">CAD Library</div>
+                        </a>
                     </div>
                     <div class="div_flex flex_vertical">
-                        <img
-                            src="images/brochuremaker.png"
-                            loading="lazy"
-                            alt=""
-                            class="icon_designer_tools _64px"
-                        />
-                        <div class="spacer _32px"></div>
-                        <div class="heading s blue">Request A Catalog</div>
+                        <a href="https://www.beko.com/us-en/request-a-catalog">
+                            <img
+                                src="images/brochuremaker.png"
+                                loading="lazy"
+                                alt=""
+                                class="icon_designer_tools _64px"
+                            />
+                        </a>
+                        <a href="https://www.beko.com/us-en/request-a-catalog">
+                            <div class="spacer _32px"></div>
+                            <div class="heading s blue">Request A Catalog</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -2357,7 +2477,7 @@
                             class="icon_designer_tools _64px"
                         />
                         <div class="spacer _32px"></div>
-                        <div>Spec Library</div>
+                        <div>Spec Librarys</div>
                     </div>
                     <div class="div_flex flex_vertical">
                         <img
@@ -2383,7 +2503,7 @@
             </div>
         </div>
 
-        <div class="spacer _160px"></div>
+        <div class="spacer _160px resp-d-none"></div>
 
         <div class="section_full_background_image sign_up wf-section">
             <div
@@ -2392,11 +2512,11 @@
             >
                 <div class="copy_block news_signup_bottom">
                     <div class="content_block align_center">
-                        <h1 class="heading font_color_white">
+                        <h1 class="heading font_color_white font-ui fs_26 line-40">
                             Sign Up for Ongoing News from Beko
                         </h1>
                         <div class="spacer _16px"></div>
-                        <div class="body_text font-color-white">
+                        <div class="body_text font-color-white signup-text fs_20">
                             Sign up for ongoing news about the Healthy Kitchen. Enter your
                             information below to stay up to date on all of the latest
                             developments.
@@ -2421,7 +2541,7 @@
                                     required=""
                                 /><input
                                     type="email"
-                                    class="text-field white w-input"
+                                    class="text-field white w-input mb_20"
                                     maxlength="256"
                                     name="email-2"
                                     data-name="Email 2"
@@ -2480,12 +2600,45 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"
         ></script>
-        <script src="js/webflow.js" type="text/javascript"></script>
+
+        <!-- LOAD LOTTIE FILE ACCORDING TO DEVICE -->
+        <script>
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                var mobileVideo = document.getElementById(
+                    "w-node-_75afc7b1-fca0-5357-fa28-5052cbcf25f6-e53849ae"
+                );
+                mobileVideo.setAttribute(
+                    "data-src",
+                    "documents/top_video_1080_1920_mobile_1_31_22.json"
+                );
+            } else {
+                var desktopVideo = document.getElementById(
+                    "w-node-_75afc7b1-fca0-5357-fa28-5052cbcf25f6-e53849ae"
+                );
+                desktopVideo.setAttribute(
+                    "data-src",
+                    "documents/top_video_1080_1_31_22.json"
+                );
+            }
+        </script>
+
         <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+        <!-- --------------------------------------- -->
+        <!-- LOAD IMAGES AND VIDEOS -->
+        <script src="js/images.js"></script>
+        <!-- APPEND IMAGES AND VIDEOS TO HTML -->
+        <script src="js/append_html.js"></script>
+        <!-- ONCLICK LOAD DATA TO MODAL -->
+        <script src="js/load_data.js"></script>
+        <!-- CREATED EXTRA MODAL FOR HEALTHY KITCHEN COUNCIL PROFILE -->
+        <script src="js/extra_modal.js"></script>
+        <!-- --------------------------------------- -->
 
         <script src="js/gsap.js"></script>
-        <script src="js/load_data.js"></script>
+        <script src="js/webflow.js" type="text/javascript"></script>
     </body>
 </html>
