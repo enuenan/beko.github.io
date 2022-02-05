@@ -1919,7 +1919,8 @@ blockquote {
 	left: 25vw;
 	top: 25vh;
 	display: block;
-	max-width: 800px;
+	/* max-width: 800px; */
+	width: 1300px;
 	padding: 56px;
 	border-radius: 10px;
 	background-color: #fff;

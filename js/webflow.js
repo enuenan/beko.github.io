@@ -44135,7 +44135,7 @@ expressionsPlugin:writable, PropertyFactory, ShapePropertyFactory, Matrix, idPre
  * ----------------------------------------------------------------------
  * Webflow: Interactions 2.0: Init
  */
-setTimeout(() => {
+// setTimeout(() => {
 	Webflow.require('ix2').init({
 		"events": {
 			"e-2": {
@@ -46866,4 +46866,4 @@ setTimeout(() => {
 			}]
 		}
 	});
-}, 1000);
+// }, 1000);

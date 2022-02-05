@@ -1,87 +1,97 @@
-$(function () {
-    $.getJSON("js/images.json", function (data) {
-        $.each(data.healthy_kitchen_council, function (i, hkc) {
-            var hkc_image_data = `<div role="listitem" class="grid_item w-dyn-item">
-                                        <a
-                                            id="w-node-_058f6aaf-86c3-1d0c-2ab0-d1fdd69ead04-e53849ae"
-                                            data-w-id="058f6aaf-86c3-1d0c-2ab0-d1fdd69ead04"
-                                            href="#"
-                                            class="image_icon_play council_grid w-inline-block"
-                                        >
-                                            <img
-                                                src="images/pngaaa.com-177719.png"
-                                                loading="lazy"
-                                                sizes="100vw"
-                                                srcset="
-                                                    images/pngaaa.com-177719-p-500.png  500w,
-                                                    images/pngaaa.com-177719.png       1025w
-                                                "
-                                                alt=""
-                                                class="image-8"
-                                            />
-                                        </a>
-                                        <a
-                                            id="w-node-_654c9179-ae6c-a599-3830-2964bcfd5f72-e53849ae"
-                                            data-w-id="654c9179-ae6c-a599-3830-2964bcfd5f72"
-                                            href="#"
-                                            class="grid_element w-inline-block"
-                                        >
-                                            <div class="div-block-6">
-                                                <h5 class="heading s blue">${hkc.council_member_name} ${hkc.title}</h5>
-                                            </div>
-                                            <img
-                                                src="${hkc.image}"
-                                                loading="lazy"
-                                                alt=""
-                                                class="grid_img"
-                                            />
-                                        </a>
-                                    </div>`;
-
-            $("#hkc_image").append(hkc_image_data);
-        });
-        $.each(data.appliances, function (i, appliance) {
-            var appliance_image_data = `<div role="listitem" class="grid_item w-dyn-item">
-                                        <a
-                                            id="w-node-_670e098e-af47-a036-38b9-069d5ec1f935-e53849ae"
-                                            data-w-id="670e098e-af47-a036-38b9-069d5ec1f935"
-                                            href="#"
-                                            class="grid_element w-inline-block"
-                                            ><img
-                                                src="${appliance.image}"
-                                                loading="lazy"
-                                                alt=""
-                                                class="grid_img"
-                                            />
-                                            <div class="div-block-6">
-                                                <h5 class="heading-15">${appliance.name}</h5>
-                                            </div>
-                                        </a>
-                                    </div>`;
-
-            $("#appliances_images").append(appliance_image_data);
-        });
-        $.each(data.recipes, function (i, recipe) {
-            var recipes_image_data = `<div role="listitem" class="grid_item w-dyn-item">
-                                        <a
-                                            id="w-node-_703c24f6-c3e0-66b8-5382-f0d0b93a93d6-e53849ae"
-                                            data-w-id="703c24f6-c3e0-66b8-5382-f0d0b93a93d6"
-                                            href="#"
-                                            class="grid_element w-inline-block"
-                                        >
-                                            <div class="div-block-6">
-                                                <h5 class="heading-17">${recipe.name}</h5>
-                                            </div>
-                                            <img
-                                                src="${recipe.image}"
-                                                loading="lazy"
-                                                alt=""
-                                                class="grid_img"
-                                            />
-                                        </a>
-                                    </div>`;
-
-            $("#recipe_images").append(recipes_image_data);
-        });
-    });
+// setTimeout(() => {
+$(".addTrailerVideo, .addFullVideo, .addWatchVideo").click(function () {
+    $("#video_modal").attr("src", "");
+    $("#video_modal").attr("src", $(this).data("video"));
+    $("#video_title").text($(this).data("title"));
+    $("#video_description").text($(this).data("description"));
 });
+
+// appliance modal
+$(".addImage1OnClick,.addImage2OnClick").click(function () {
+    if ($(this).data("modal_image")) {
+        $("#modal_image").attr("src", $(this).data("modal_image"));
+        $("#modal_image").css("width", "100%");
+        $("#modal_image").css("height", "100%");
+        $("#modal_image").css("display", "");
+    } else {
+        $("#modal_image").attr("src", "");
+        $("#modal_image").css("width", "");
+        $("#modal_image").css("height", "");
+        $("#modal_image").css("display", "none");
+    }
+    if ($(this).data("modal_video")) {
+        $("#modal_video").attr("src", $(this).data("modal_video"));
+        $("#modal_video").css("width", "100%");
+        $("#modal_video").css("height", "100%");
+        $("#modal_video").css("display", "");
+    } else {
+        $("#modal_video").attr("src", "");
+        $("#modal_video").css("width", "");
+        $("#modal_video").css("height", "");
+        $("#modal_video").css("display", "none");
+    }
+    $("#modal_title").text($(this).data("modal_title"));
+    $("#modal_description").text($(this).data("modal_description"));
+    if ($(this).data("view_post_link")) {
+        $("#view_post_link").attr("href", $(this).data("view_post_link"));
+        $("#view_post_link").text("View Post");
+    }
+});
+
+// COUNCIL SECTION
+$(".addVideoOnClick").click(function () {
+    $("#profile_image").attr("src", $(this).data("image"));
+    $("#linked_in").attr("href", $(this).data("linked_in"));
+    $("#council_member_name").text($(this).data("council_member_name"));
+    $("#title").text($(this).data("title"));
+
+    // SHOWING BUSINESS WEBSITE 1 LINE
+    if (!$(this).data("business_website1").trim()) {
+        $("#showBusiness").css("display", "none");
+        $("#business_website1").text("");
+    } else {
+        $("#showBusiness").css("display", "");
+        $("#business_website1").text($(this).data("business_website1"));
+        $("#business_website1").attr(
+            "href",
+            "https://" + $(this).data("business_website1")
+        );
+    }
+
+    // SHOWING BUSINESS WEBSITE 2 LINE
+    if (!$(this).data("business_website2").trim()) {
+        $("#business_website2").text("");
+    } else {
+        $("#business_website2").text(
+            ", " + $(this).data("business_website2")
+        );
+        $("#business_website2").attr(
+            "href",
+            "https://" + $(this).data("business_website2")
+        );
+    }
+
+    // SHOWING BUSINESS EMAIL 1 LINE
+    $("#email1").text($(this).data("email1"));
+    $("#email1").attr("href", "mailto:" + $(this).data("email1"));
+
+    // SHOWING BUSINESS EMAIL 2 LINE
+    if (!$(this).data("email2").trim()) {
+        $("#email2").text("");
+    } else {
+        $("#email2").text(", " + $(this).data("email2"));
+        $("#email2").attr("href", "mailto:" + $(this).data("email2"));
+    }
+
+    $("#residence").text($(this).data("residence"));
+    $("#info").html($(this).data("info"));
+});
+
+// $(".addImage2OnClick").click(function () {
+//     // $.fn.image();
+//     $("#image1_modal").attr("src", "");
+//     $("#image1_modal").attr("src", $(this).data("image"));
+//     $("#title_modal").text($(this).data("title"));
+//     $("#description_modal").text($(this).data("description"));
+// });
+// }, 1500);

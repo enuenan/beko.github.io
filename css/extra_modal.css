@@ -1,0 +1,147 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.modal .modal-box {
+    background: #FFF;
+    border-radius: 5px;
+    width: 600px;
+    min-height: 400px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.healthy-kitchen {
+    width: 45% !important;
+}
+
+.modal .modal-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.modal .modal-box .icon img {
+    color: #111;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.modal .modal-box .icon img:hover {
+    color: #6c5ce7;
+    transform: scale(1.1);
+}
+
+.footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top-icon {
+    display: flex;
+}
+
+.top-icon-logo {
+    width: 50%;
+}
+
+.mdl-line {
+    width: 100%;
+    height: 7px;
+    background-color: #0073bc;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.mdl-icon img {
+    width: 30%;
+}
+
+.heading-text h5 {
+    color: #0073bc;
+    font-family: 'Monotype helvetica now display', sans-serif;
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+.mdl-mid-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.iamge-slide img {
+    width: 98%;
+    border: 2px solid #000;
+}
+
+.iamge-slide {
+    width: 20%;
+}
+
+.icon-slide {
+    width: 5%;
+}
+
+.icon-slide img {
+    width: 90%;
+}
+
+.mdl-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.mdl-info h3 {
+    font-size: 20px;
+    color: #0073bc;
+    font-weight: 500;
+}
+
+.mdl-info span {
+    font-size: 14px;
+    color: #007cba;
+    font-weight: 100;
+}
+
+.mdl-info strong {
+    color: #000000;
+}
+
+.mdl-text {
+    margin-top: 30px;
+    color: #000;
+    font-size: 16px;
+}
+
+.mdl-footer-line {
+    margin-top: 30px;
+}
+
+.embedVideo {
+    width: 100%;
+    height: 470px;
+}
