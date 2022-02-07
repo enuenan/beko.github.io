@@ -448,6 +448,7 @@ img {
     top: 40px;
     color: #fff;
     width: 100%;
+    z-index: 1;
 }
 
 .mob_slider_heading h4 {
@@ -516,11 +517,15 @@ img {
     width: 1000px;
     height: auto;
     max-height: 800px;
-    margin: auto;
+    /*! margin: auto; */
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 30px;
+    /*! margin-top: 30px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 .modal_body_3 {
@@ -817,4 +822,38 @@ h4 {
 .conclusion {
     margin-top: 100px;
     padding-bottom: 100px;
+}
+
+.activeModal {
+    color: #58a789 !important;
+}
+
+.arrow.active_nav::before {
+    transform: rotate(225deg);
+    transition: transform 0.3s linear;
+}
+
+.stickyNav {
+    max-height: 500px !important;
+}
+
+.div_flex.flex_horizontal.align-center.fit_contain.responsive_dropdown {
+    display: block !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.container-_global.stick_subnav.background_color_gray {
+    padding: 0 !important;
+}
+
+#stickyNav {
+    background: #54D4FF;
+}
+
+.stickyNavBar .section_sticky_subnav {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
 }
