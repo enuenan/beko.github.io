@@ -134,9 +134,8 @@ var appliances = [{
         "modal_image": "",
         "modal_video": "https://player.vimeo.com/video/672435051?h=9a28ce794d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
         "modal_title": "Refrigeration",
-        "modal_description": "",
+        "modal_description": "<p>HarvestFresh™ is the latest evolution in Beko’s food preservation technology for the refrigerator. To learn more,<a href=''> click here </a> </p>",
         "view_post_link": ""
-
     },
     {
         "name": "Laundry",
@@ -144,7 +143,7 @@ var appliances = [{
         "modal_image": "images/appliance/Washer_Recyclenet.png",
         "modal_video": "",
         "modal_title": "Laundry",
-        "modal_description": "",
+        "modal_description": "<p>Our new washers feature RecycledTub™ washtubs which are made of 60 recycled plastic water bottles, an industry first.  Not only that, but they are 50% gentler on your clothing.<a href=''> Learn more here </a> </p>",
         "view_post_link": ""
     },
     {
@@ -153,7 +152,7 @@ var appliances = [{
         "modal_image": "",
         "modal_video": "https://player.vimeo.com/video/672434972?h=97af7719f0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
         "modal_title": "Dishwashers",
-        "modal_description": "",
+        "modal_description": "<p>Our new dishwashers are packed with innovative features that not only clean dishes better but use less energy and water while doing it.<a href=''> Click </a> to learn more.</p>",
         "view_post_link": ""
     },
     {
@@ -162,9 +161,8 @@ var appliances = [{
         "modal_image": "images/appliance/RecycleNet_Range.png",
         "modal_video": "",
         "modal_title": "Cooking",
-        "modal_description": "",
+        "modal_description": "<p>Our new double-wall oven is packed with features such as AirFry, DualFan and 3D cooking, all housed in the largest capacity interior in the US.<a href=''> Learn more here: </a> </p>",
         "view_post_link": ""
-
     }
 ];
 
