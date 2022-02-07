@@ -4,7 +4,7 @@ window.onresize = function () {
 }
 
 function onResizeWindow() {
-    if (window.matchMedia("(max-width: 767px)").matches) {
+    if (window.matchMedia("(max-width: 920px)").matches) {
         var mobileVideo = document.getElementById(
             "w-node-_75afc7b1-fca0-5357-fa28-5052cbcf25f6-e53849ae"
         );

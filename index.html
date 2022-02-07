@@ -36,12 +36,9 @@
                 color: #ffffff;
                 text-shadow: none;
             }
-
-            .d-none {
-                display: none;
-            }
         </style>
     </head>
+
     <body class="body">
         <!-- THEIR MODAL -->
         <div
@@ -693,43 +690,53 @@
                     --main-light-color: #e8e2da;
                     --main-dark-color: #2e2a27;
                 }
+
                 a {
                     color: inherit;
                 }
+
                 .grid_item:nth-child(6n + 1) {
                     width: 20%;
                     margin-right: 6.25%;
                 }
+
                 .grid_item:nth-child(6n + 2) {
                     width: 20%;
                     margin-right: 6.25%;
                     margin-top: 20%;
                 }
+
                 .grid_item:nth-child(6n + 3) {
                     width: 20%;
                     margin-right: 6.25%;
                     margin-top: 4%;
                 }
+
                 .grid_item:nth-child(6n + 4) {
                     width: 20%;
                     margin-top: 24%;
                 }
+
                 .grid_item:nth-child(6n + 5) {
                     width: 20%;
                     margin-right: 6.25%;
                     margin-top: -12%;
                 }
+
                 .grid_item:nth-child(6n + 6) {
                     width: 20%;
                     margin-right: 6.25%;
                     margin-top: -8%;
                 }
+
                 body * {
                     border-color: currentColor !important;
                 }
+
                 .grid_text-item {
                     pointer-events: none;
                 }
+
                 .grid_text-item.is--active {
                     opacity: 1;
                 }
@@ -887,6 +894,7 @@
                                             .st0 {
                                                 fill: none;
                                             }
+
                                             .st1 {
                                                 fill: #ffffff;
                                             }
@@ -1118,6 +1126,7 @@
                                             .st0 {
                                                 fill: none;
                                             }
+
                                             .st1 {
                                                 fill: #ffffff;
                                             }
@@ -1468,7 +1477,9 @@
                                         forefront of American kitchen design.
                                     </div>
                                     <div class="spacer _56px"></div>
-                                    <a href="#council" class="beko_button secondary teal w-button"
+                                    <a
+                                        href="#Partnerships"
+                                        class="beko_button secondary teal w-button"
                                         >View Our Partners</a
                                     >
                                     <div class="spacer _56px"></div>
@@ -1725,7 +1736,7 @@
                                         <div
                                             id="w-node-_43d509a4-2bf4-4839-50fe-f3f5d5ba6e0c-e53849ae"
                                             class="wrapper_grid_image flex wrapper_image_resp"
-                                            style="width: 25%"
+                                            style="width: 600px"
                                         >
                                             <img
                                                 src="images/line-drawing-interior-design-software-chief-architect-home-and-ideas-room-app.jpg"
@@ -1737,13 +1748,13 @@
                                                     images/line-drawing-interior-design-software-chief-architect-home-and-ideas-room-app.jpg        1600w
                                                 "
                                                 alt=""
-                                                class="image-16"
+                                                class="image-16 cursor showCouncilModal"
                                             />
                                             <div class="spacer _32px"></div>
                                             <div class="div-block-14">
                                                 <a
                                                     href="#"
-                                                    class="link-block-4 w-inline-block showCouncilModal"
+                                                    class="link-block-4 w-inline-block cursor showCouncilModal"
                                                 >
                                                     <h3
                                                         class="heading s teal align-left activeModal"
@@ -1753,7 +1764,7 @@
                                                 </a>
                                                 <div class="spacer _8px"></div>
                                                 <div
-                                                    class="body_text m white align-left showCouncilModal"
+                                                    class="body_text m white align-left cursor showCouncilModal"
                                                 >
                                                     Click here to learn more about this exciting
                                                     Healthy Kitchen Design by our Council Member
@@ -1913,7 +1924,7 @@
                                     our Healthy Kitchen Council Video for more info.<br />
                                 </div>
                                 <div class="spacer _48px"></div>
-                                <div>
+                                <div class="beko_button_wrapper">
                                     <a
                                         href="#"
                                         class="beko_button no_margin_bottom margin_right w-button addWatchVideo"
@@ -2622,6 +2633,7 @@
                                 .w-slider-dot {
                                     background: #747474;
                                 }
+
                                 .w-slider-dot.w-active {
                                     background: #b1b0b0;
                                 }
@@ -2917,7 +2929,7 @@
                             information below to stay up to date on all of the latest developments.
                         </div>
                         <div class="spacer _32px"></div>
-                        <div class="form-block w-form">
+                        <div class="form-block w-form" style="width: 100% !important">
                             <form
                                 id="email-form"
                                 name="email-form"
@@ -2934,6 +2946,7 @@
                                     placeholder="Your name"
                                     id="email-2"
                                     required=""
+                                    style="padding-right: 12px !important"
                                 /><input
                                     type="email"
                                     class="text-field white w-input mb_20"
@@ -2943,6 +2956,7 @@
                                     placeholder="Your email"
                                     id="email-2"
                                     required=""
+                                    style="padding-right: 12px !important"
                                 /><input
                                     type="submit"
                                     value="Submit"

@@ -1,6 +1,8 @@
 @media (max-width:1024px) {
     .form {
         flex-direction: column !important;
+        height: auto;
+        align-items: center;
     }
 
     .div-block-3 {
@@ -103,7 +105,6 @@
     .header_text {
         padding-top: 85px;
         height: 350px;
-        background: #00426a;
     }
 
     .sticky-circle-cu {
@@ -115,7 +116,7 @@
 
     .wrapper_image_resp {
         flex-direction: column !important;
-        width: 45%;
+        width: 90% !important;
     }
 
     .wrapper_image_resp img {
@@ -136,7 +137,7 @@
 
     .sticky_circle_wrap_resp {
         background: #00426A;
-        height: 120rem !important;
+        height: 130rem !important;
     }
 
     .sticky_text_resp {
@@ -297,7 +298,6 @@
 
     .modal-box {
         width: 95vw !important;
-        top: 30% !important;
     }
 
     .modal-content {
@@ -314,9 +314,10 @@
     }
 
     .lottie-resp svg {
-        transform: translate3d(-700px, 10px, 0) !important;
-        height: 1350px !important;
-        width: 2300px !important;
+        transform: translate3d(0px, 10px, 0) !important;
+        height: 100% !important;
+        width: 100% !important;
+        background: #01426a;
     }
 
     .partnership {
@@ -339,6 +340,7 @@
 
     .beko_button.margin_b_35vh.margin_r_140px {
         margin-bottom: 20vw;
+        margin-right: 0 !important;
     }
 
     ul.social-icon-list {
@@ -512,7 +514,7 @@
     }
 
     .arrow::before {
-        right: -120px;
+        right: -65%;
         content: '';
         position: absolute;
         width: 10px;
@@ -524,16 +526,28 @@
         transform: rotate(45deg);
         transition: transform 0.3s linear;
     }
+
+    .beko_button_wrapper {
+        margin: auto !important;
+    }
 }
 
-@media (max-width:770px) {
+@media (max-width:915px) {
+    .lottie-resp svg {
+        transform: translate3d(-583px, -85px, 0) !important;
+        height: 114% !important;
+        width: 250% !important;
+    }
+}
+
+@media (max-width:830px) {
     .footer-container {
         width: 100% !important;
         padding: 0 5%;
     }
 
     .wrapper_image_resp {
-        width: 40%;
+        width: 80%;
     }
 
     .footer-heading {
@@ -599,6 +613,12 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+    }
+
+    .lottie-resp svg {
+        transform: translate3d(21px, -70px, 0) !important;
+        height: 115% !important;
+        width: 100% !important;
     }
 
 }
@@ -715,7 +735,6 @@
 
     .modal-box {
         width: 90vw !important;
-        top: 45% !important;
     }
 
     .modal-content {
@@ -732,9 +751,10 @@
     }
 
     .lottie-resp svg {
-        transform: translate3d(-780px, -200px, 0) !important;
-        height: 1080px !important;
-        width: 1920px !important;
+        transform: translate3d(15px, 0px, 0) !important;
+        height: 100% !important;
+        width: 100% !important;
+        background: #01426a;
     }
 
     .partnership {
@@ -757,6 +777,7 @@
 
     .beko_button.margin_b_35vh.margin_r_140px {
         margin-bottom: 20vw;
+        margin-right: 0 !important;
     }
 
     .footer {
@@ -923,7 +944,7 @@
 
     .wrapper_image_resp {
         flex-direction: column !important;
-        width: 85%;
+        width: 60% !important;
     }
 
     .wrapper_image_resp img {
@@ -982,7 +1003,7 @@
     }
 
     .sticky-circle_wrap {
-        height: 160rem !important;
+        height: 90rem !important;
     }
 
     .modal-body {
@@ -995,13 +1016,12 @@
     }
 
     .section_sticky_content_resp {
-        padding-bottom: 350px;
+        padding-bottom: 0;
     }
 
     .header_text {
         padding-top: 90px;
         height: 350px;
-        background: #00426a;
     }
 
     .container.is--header.p-0 {
@@ -1022,14 +1042,14 @@
 
     .modal_body_2 {
         width: 90vw !important;
-        margin-top: 120px !important;
+        /* margin-top: 120px !important; */
         padding: 15px !important;
     }
 
     .modal_body_3 {
         width: 90vw !important;
-        height: 90vh !important;
-        margin-top: 30px !important;
+        /* height: 90vh !important; */
+        /* margin-top: 30px !important; */
         padding: 15px !important;
     }
 
@@ -1126,6 +1146,22 @@
     }
 
     .arrow::before {
-        right: -15px !important;
+        right: -5% !important;
+    }
+
+    .form input {
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .design_statement_heading {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width:282px) {
+    .arrow::before {
+        right: 15% !important;
+        top: 45px !important;
     }
 }

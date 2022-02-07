@@ -455,7 +455,7 @@ img {
     text-align: center;
     font-size: 24px;
     font-weight: 100 !important;
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
@@ -529,14 +529,16 @@ img {
 }
 
 .modal_body_3 {
-    width: 1000px;
-    height: auto;
+    width: 90vw;
+    height: 90vh;
     max-height: 800px;
-    margin: auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 .modal_content_2 {
@@ -856,4 +858,24 @@ h4 {
     position: fixed !important;
     top: 0 !important;
     width: 100% !important;
+}
+
+.content_block_resp h2 {
+    width: 100%;
+}
+
+.d-none {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.beko_button.subnav:hover {
+    color: #0b426a !important;
+}
+
+.beko_button.margin_b_35vh.margin_r_140px {
+    margin-right: 0 !important;
 }
