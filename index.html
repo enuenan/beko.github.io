@@ -24,8 +24,7 @@
                 var n = c.documentElement,
                     t = " w-mod-";
                 (n.className += t + "js"),
-                    ("ontouchstart" in o ||
-                        (o.DocumentTouch && c instanceof DocumentTouch)) &&
+                    ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) &&
                         (n.className += t + "touch");
             })(window, document);
         </script>
@@ -44,6 +43,7 @@
         </style>
     </head>
     <body class="body">
+        <!-- THEIR MODAL -->
         <div
             data-w-id="0e2b36d3-7270-24b4-1bad-315f7fc3fe0b"
             style="opacity: 0"
@@ -63,10 +63,7 @@
                         />
                     </a>
                 </div>
-                <div
-                    style="padding-top: 56.17021276595745%"
-                    class="embed_video w-video w-embed"
-                >
+                <div style="padding-top: 56.17021276595745%" class="embed_video w-video w-embed">
                     <iframe
                         src=""
                         class="embedly-embed"
@@ -76,13 +73,7 @@
                         id="video_modal"
                         width="1920"
                         height="1080"
-                        style="
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                        "
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
                         title="Beko &amp;ndash; What is a Healthy Kitchen?"
                     >
                     </iframe>
@@ -91,6 +82,7 @@
             </div>
         </div>
 
+        <!-- THEIR MODAL -->
         <div style="opacity: 0" class="modals_content">
             <div class="modal-1">
                 <div class="grp-modal-1 mb40">
@@ -131,14 +123,11 @@
             </div>
         </div>
 
+        <!-- OUR PROFILE MODAL -->
         <div class="modal" style="display: block !important">
             <div class="modal-box healthy-kitchen" style="overflow-y: initial !important">
                 <div class="icon">
-                    <img
-                        src="images/icn-cross.svg"
-                        alt="Cross Mark in Black"
-                        class="img-close"
-                    />
+                    <img src="images/icn-cross.svg" alt="Cross Mark in Black" class="img-close" />
                 </div>
                 <div class="modal-body">
                     <div class="modal-container">
@@ -167,13 +156,9 @@
                                     <h3 id="council_member_name"></h3>
                                     <span id="title"></span>
                                     <span>
-                                        <strong id="showBusiness"
-                                            >Business Website:</strong
-                                        >
-                                        <a href="" id="business_website1" target="_blank">
-                                        </a>
-                                        <a href="" id="business_website2" target="_blank">
-                                        </a>
+                                        <strong id="showBusiness">Business Website:</strong>
+                                        <a href="" id="business_website1" target="_blank"> </a>
+                                        <a href="" id="business_website2" target="_blank"> </a>
                                     </span>
                                     <span>
                                         <strong>Email: </strong>
@@ -196,6 +181,7 @@
             </div>
         </div>
 
+        <!-- OUR IMAGE/VIDEO/FORM MODAL -->
         <div class="modal1" style="display: block !important">
             <div class="modal_body_2">
                 <div class="modal_container">
@@ -213,7 +199,7 @@
                                 <img src="" id="modal_image" alt="" />
                             </div>
                             <div class="video_time">
-                                <iframe
+                                <!-- <iframe
                                     src=""
                                     class="embedVideo"
                                     frameborder="0"
@@ -223,7 +209,17 @@
                                     style="width: 100%; height: 550px"
                                     title="Beko &amp;ndash; What is a Healthy Kitchen?"
                                 >
-                                </iframe>
+                                </iframe> -->
+                                <iframe
+                                    width="1172"
+                                    height="659"
+                                    src=""
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    id="modal_video"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
                             </div>
                         </div>
                         <div class="form-block w-form" id="form">
@@ -234,9 +230,8 @@
                                 method="get"
                             >
                                 <div class="p3-left-reg">
-                                    Sign up here to follow the progress on this and other
-                                    Healthy Kitchen projects that are currently in the
-                                    works.
+                                    Sign up here to follow the progress on this and other Healthy
+                                    Kitchen projects that are currently in the works.
                                 </div>
                                 <div class="spacer _32px"></div>
                                 <input
@@ -270,19 +265,12 @@
                                 <div>Thank you! Your submission has been received!</div>
                             </div>
                             <div class="w-form-fail">
-                                <div>
-                                    Oops! Something went wrong while submitting the form.
-                                </div>
+                                <div>Oops! Something went wrong while submitting the form.</div>
                             </div>
                         </div>
                         <div class="p3-left-reg" id="modal_description"></div>
                         <div class="modal_bottom_content">
-                            <a
-                                href=""
-                                target="_blank"
-                                class="modal_post_btn"
-                                id="view_post_link"
-                            >
+                            <a href="" target="_blank" class="modal_post_btn" id="view_post_link">
                             </a>
                         </div>
                     </div>
@@ -290,11 +278,9 @@
             </div>
         </div>
 
+        <!-- OUR MODAL -->
         <div class="modal2" style="display: block !important">
-            <div
-                class="modal_body_3"
-                style="overflow-y: initial !important; overflow: hidden"
-            >
+            <div class="modal_body_3" style="overflow-y: initial !important; overflow: hidden">
                 <div class="modal_container">
                     <div class="modal_content_2">
                         <div class="icon">
@@ -333,23 +319,18 @@
                                         <hr />
                                     </div>
                                     <p>
-                                        This kitchen serves the needs of an active family
-                                        who cooks together to enhance their lifestyle
-                                        choices to be healthy, both emotionally and
-                                        physically. They enjoy taking the effort to
-                                        prepare nutritious, tasteful meals. It is a family
-                                        project to compost, recycle, keep a garden and
-                                        preserve abundance by canning their seasonal
-                                        bounty. They love the outdoors and their local
-                                        weather allows for outdoor activity most of the
-                                        year.
+                                        This kitchen serves the needs of an active family who cooks
+                                        together to enhance their lifestyle choices to be healthy,
+                                        both emotionally and physically. They enjoy taking the
+                                        effort to prepare nutritious, tasteful meals. It is a family
+                                        project to compost, recycle, keep a garden and preserve
+                                        abundance by canning their seasonal bounty. They love the
+                                        outdoors and their local weather allows for outdoor activity
+                                        most of the year.
                                     </p>
                                 </div>
                             </div>
-                            <div
-                                class="design_statement_content_2nd"
-                                style="display: none"
-                            >
+                            <div class="design_statement_content_2nd" style="display: none">
                                 <div class="modal_contaniner_2">
                                     <div class="design_statement_content_2nd-heading">
                                         <h2>Flexibility</h2>
@@ -367,11 +348,10 @@
                                                 <p>Opening Glass Wall –</p>
                                                 <br />
                                                 <p>
-                                                    The kitchen doesn’t just relate to the
-                                                    outdoor deck it becomes one with it.
-                                                    The sink peninsula has seating on the
-                                                    deck side so that when the wall is
-                                                    open, the deck and kitchen are one
+                                                    The kitchen doesn’t just relate to the outdoor
+                                                    deck it becomes one with it. The sink peninsula
+                                                    has seating on the deck side so that when the
+                                                    wall is open, the deck and kitchen are one
                                                     space.
                                                 </p>
                                             </div>
@@ -385,14 +365,14 @@
                                             </div>
                                             <div class="text_wrapper">
                                                 <p>
-                                                    French Doors at Family Room and
-                                                    Sliding Room Divider at Dining Room –
+                                                    French Doors at Family Room and Sliding Room
+                                                    Divider at Dining Room –
                                                 </p>
                                                 <br />
                                                 <p>
-                                                    Provide openness when needed and
-                                                    privacy and sound deadening when
-                                                    activities call for separation.
+                                                    Provide openness when needed and privacy and
+                                                    sound deadening when activities call for
+                                                    separation.
                                                 </p>
                                             </div>
                                         </div>
@@ -407,12 +387,11 @@
                                                 <p>Location of Beverage Center -</p>
                                                 <br />
                                                 <p>
-                                                    Serves both the inside and outside
-                                                    space easily for anything liquid,
-                                                    including smoothies, without
-                                                    interfering with meal preparation.
-                                                    Also close enough that access during
-                                                    meal prep is easy.
+                                                    Serves both the inside and outside space easily
+                                                    for anything liquid, including smoothies,
+                                                    without interfering with meal preparation. Also
+                                                    close enough that access during meal prep is
+                                                    easy.
                                                 </p>
                                             </div>
                                         </div>
@@ -427,11 +406,10 @@
                                                 <p>Lighting –</p>
                                                 <br />
                                                 <p>
-                                                    Layered lighting that can be used
-                                                    together or each separately as needed.
-                                                    The articulating lighting at the
-                                                    peninsula can be adjusted to position
-                                                    where needed.
+                                                    Layered lighting that can be used together or
+                                                    each separately as needed. The articulating
+                                                    lighting at the peninsula can be adjusted to
+                                                    position where needed.
                                                 </p>
                                             </div>
                                         </div>
@@ -446,10 +424,9 @@
                                                 <p>Copper Trough Sink in Peninsula -</p>
                                                 <br />
                                                 <p>
-                                                    Designed to be used to grow herbs to
-                                                    have fresh at hand whether cooking
-                                                    inside or BBQing on the deck. The
-                                                    drain allows it to be used as a fun
+                                                    Designed to be used to grow herbs to have fresh
+                                                    at hand whether cooking inside or BBQing on the
+                                                    deck. The drain allows it to be used as a fun
                                                     access at parties for drinks.
                                                 </p>
                                             </div>
@@ -482,79 +459,64 @@
                                                 </div>
                                             </div>
                                             <div class="work_stations_text_content">
-                                                <div
-                                                    class="design_statement_content_2nd-heading"
-                                                >
+                                                <div class="design_statement_content_2nd-heading">
                                                     <h2>Work Stations</h2>
                                                     <hr />
                                                 </div>
                                                 <div class="Work_setion_text_2">
                                                     <p>
-                                                        The sink peninsula offers plenty
-                                                        of counterspace for prepping and
-                                                        cleanup, taking into account the
-                                                        need for recycling to the right of
-                                                        the sink composting in a rollout
-                                                        below the sink. The dishwasher
-                                                        close at hand saves water and make
-                                                        cleanup a snap. On the island
-                                                        behind the sink, there are deep
-                                                        drawer fitted with inserts for the
-                                                        storage of flatware, glasses and
-                                                        dishes. The open baskets store
-                                                        onions and potatoes that need air
-                                                        circulation. A Pullout for oils
-                                                        and vinegars and even a bar to air
-                                                        a dishtowel are also included. The
-                                                        additional counterspace and 48”
-                                                        wide aisle make it easy to work
-                                                        together.
+                                                        The sink peninsula offers plenty of
+                                                        counterspace for prepping and cleanup,
+                                                        taking into account the need for recycling
+                                                        to the right of the sink composting in a
+                                                        rollout below the sink. The dishwasher close
+                                                        at hand saves water and make cleanup a snap.
+                                                        On the island behind the sink, there are
+                                                        deep drawer fitted with inserts for the
+                                                        storage of flatware, glasses and dishes. The
+                                                        open baskets store onions and potatoes that
+                                                        need air circulation. A Pullout for oils and
+                                                        vinegars and even a bar to air a dishtowel
+                                                        are also included. The additional
+                                                        counterspace and 48” wide aisle make it easy
+                                                        to work together.
                                                     </p>
                                                     <p>
-                                                        The cooktop and ovens enjoy plenty
-                                                        of counterspace including that on
-                                                        the island behind. This L-shaped
-                                                        island houses a MW drawer for
-                                                        convenience and offers lots of
-                                                        counterspace for cooking
-                                                        activities and storage for pots
-                                                        and pans and utensils. Vertical
-                                                        dividers in the deep drawer below
-                                                        the ovens house baking pans and
-                                                        above store cookie sheets and
-                                                        serving trays.
+                                                        The cooktop and ovens enjoy plenty of
+                                                        counterspace including that on the island
+                                                        behind. This L-shaped island houses a MW
+                                                        drawer for convenience and offers lots of
+                                                        counterspace for cooking activities and
+                                                        storage for pots and pans and utensils.
+                                                        Vertical dividers in the deep drawer below
+                                                        the ovens house baking pans and above store
+                                                        cookie sheets and serving trays.
                                                     </p>
                                                     <p>
-                                                        The beverage center includes a
-                                                        faucet that dispenses hot and cold
-                                                        filtered water-still or sparkling.
-                                                        The refrigerator/freezer hold all
-                                                        entertaining needs as well as
-                                                        additional ice while discreetly
-                                                        hiding behind cabinet doors.
+                                                        The beverage center includes a faucet that
+                                                        dispenses hot and cold filtered water-still
+                                                        or sparkling. The refrigerator/freezer hold
+                                                        all entertaining needs as well as additional
+                                                        ice while discreetly hiding behind cabinet
+                                                        doors.
                                                     </p>
                                                     <p>
-                                                        The banquette and kitchen table
-                                                        make family time comfortable. It’s
-                                                        a great place for homework and
-                                                        dining with the family sharing
-                                                        experiences together. A walk-in
-                                                        pantry that houses an additional
-                                                        freezer and shelves for home
-                                                        canned goods and other
-                                                        necessities, also has space for a
-                                                        utility closet and rolling cart to
-                                                        make access easier.
+                                                        The banquette and kitchen table make family
+                                                        time comfortable. It’s a great place for
+                                                        homework and dining with the family sharing
+                                                        experiences together. A walk-in pantry that
+                                                        houses an additional freezer and shelves for
+                                                        home canned goods and other necessities,
+                                                        also has space for a utility closet and
+                                                        rolling cart to make access easier.
                                                     </p>
                                                     <p>
-                                                        The stack washer/dryer close to
-                                                        the kitchen in a mud room off the
-                                                        garage allow for dirty garden
-                                                        clothes to be laundered. The
-                                                        durable butcherblock top and
-                                                        copper sink offer a great place
-                                                        for repotting and cleaning up. The
-                                                        clothes rod is perfect for hanging
+                                                        The stack washer/dryer close to the kitchen
+                                                        in a mud room off the garage allow for dirty
+                                                        garden clothes to be laundered. The durable
+                                                        butcherblock top and copper sink offer a
+                                                        great place for repotting and cleaning up.
+                                                        The clothes rod is perfect for hanging
                                                         clothes to dry.
                                                     </p>
                                                 </div>
@@ -577,24 +539,20 @@
                                                     </div>
                                                     <div class="Work_setion_text_2">
                                                         <p>
-                                                            Of course, the Beko Appliances
-                                                            were chosen for their
-                                                            efficiency in keeping food
-                                                            fresh, easy of food
-                                                            preparation and cleanup. The
-                                                            placement enhances the
-                                                            family’s activities, making it
-                                                            fun to cook together.
-                                                            Induction cooktops are a
-                                                            cleaner cooking source and
-                                                            having a wall and wall hood
-                                                            directs any dirt or moisture
-                                                            out of the room.
+                                                            Of course, the Beko Appliances were
+                                                            chosen for their efficiency in keeping
+                                                            food fresh, easy of food preparation and
+                                                            cleanup. The placement enhances the
+                                                            family’s activities, making it fun to
+                                                            cook together. Induction cooktops are a
+                                                            cleaner cooking source and having a wall
+                                                            and wall hood directs any dirt or
+                                                            moisture out of the room.
                                                         </p>
                                                         <p>
                                                             Copper sinks are naturally
-                                                            anti-microbial and smart touch
-                                                            faucets enhance cleanliness.
+                                                            anti-microbial and smart touch faucets
+                                                            enhance cleanliness.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -615,31 +573,25 @@
                                                     </div>
                                                     <div class="Work_setion_text_2">
                                                         <p>
-                                                            The material combination is
-                                                            designed for calm. The
-                                                            biophilic wallpaper and
-                                                            beadboard tile splash in the
-                                                            laundry room offer some
-                                                            comfort from the past while
-                                                            the quartz countertops and
-                                                            simple doorstyles bring modern
-                                                            convenience. The combination
-                                                            of natural wood and soft green
-                                                            cabinets, combined with white
-                                                            countertops and trim give a
-                                                            natural light ambiance. Copper
-                                                            and gold give spark to the
-                                                            room
+                                                            The material combination is designed for
+                                                            calm. The biophilic wallpaper and
+                                                            beadboard tile splash in the laundry
+                                                            room offer some comfort from the past
+                                                            while the quartz countertops and simple
+                                                            doorstyles bring modern convenience. The
+                                                            combination of natural wood and soft
+                                                            green cabinets, combined with white
+                                                            countertops and trim give a natural
+                                                            light ambiance. Copper and gold give
+                                                            spark to the room
                                                         </p>
                                                         <p>
-                                                            Texture found in the lamps
-                                                            made of recycled packing
-                                                            material (over the island) and
-                                                            easy to clean faux shagreen
-                                                            upholstery soften the space.
-                                                            Materials were chosen to
-                                                            support the family’s efforts
-                                                            to live conscientiously and
+                                                            Texture found in the lamps made of
+                                                            recycled packing material (over the
+                                                            island) and easy to clean faux shagreen
+                                                            upholstery soften the space. Materials
+                                                            were chosen to support the family’s
+                                                            efforts to live conscientiously and
                                                             thoughtfully on the earth.
                                                         </p>
                                                     </div>
@@ -658,14 +610,13 @@
                                     <div class="Conclusion_text">
                                         <div class="Work_setion_text_2">
                                             <p>
-                                                The family space is designed to be
-                                                flexible and comfortable for multiple
-                                                activities for which the space is used.
-                                                The focus on outdoors is enhanced by the
-                                                colors and materials chosen with a nod to
+                                                The family space is designed to be flexible and
+                                                comfortable for multiple activities for which the
+                                                space is used. The focus on outdoors is enhanced by
+                                                the colors and materials chosen with a nod to
                                                 heritage. Ease of use and mental health go
-                                                hand-in-hand in this indoor/outdoor space
-                                                designed for many ages.
+                                                hand-in-hand in this indoor/outdoor space designed
+                                                for many ages.
                                             </p>
                                         </div>
                                     </div>
@@ -677,6 +628,7 @@
             </div>
         </div>
 
+        <!-- THEIR MODAL -->
         <div style="opacity: 0" class="modals_form">
             <div class="modal-1">
                 <div class="grp-modal-1 mb40">
@@ -692,15 +644,10 @@
                     /></a>
                 </div>
                 <div class="form-block w-form">
-                    <form
-                        id="email-form"
-                        name="email-form"
-                        data-name="Email Form"
-                        method="get"
-                    >
+                    <form id="email-form" name="email-form" data-name="Email Form" method="get">
                         <div class="p3-left-reg">
-                            Sign up here to follow the progress on this and other Healthy
-                            Kitchen projects that are currently in the works.
+                            Sign up here to follow the progress on this and other Healthy Kitchen
+                            projects that are currently in the works.
                         </div>
                         <div class="spacer _32px"></div>
                         <input
@@ -913,10 +860,7 @@
             </div>
         </div>
 
-        <div
-            id="top"
-            class="section_sticky_content resp-overflow section_sticky_content_resp"
-        >
+        <div id="top" class="section_sticky_content resp-overflow section_sticky_content_resp">
             <div class="section_sticky_subnav responsive wf-section">
                 <div
                     data-w-id="f8be96df-185c-a0be-aa62-53f50226dfa1"
@@ -1124,29 +1068,19 @@
                             <a href="#about" class="beko_button subnav w-button">About</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#hk_project" class="beko_button subnav w-button"
-                                >Projects</a
-                            >
+                            <a href="#hk_project" class="beko_button subnav w-button">Projects</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#council" class="beko_button subnav w-button"
-                                >Council</a
-                            >
+                            <a href="#council" class="beko_button subnav w-button">Council</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#appliances" class="beko_button subnav w-button"
-                                >Appliances</a
-                            >
+                            <a href="#appliances" class="beko_button subnav w-button">Appliances</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#recipes" class="beko_button subnav w-button"
-                                >Recipes</a
-                            >
+                            <a href="#recipes" class="beko_button subnav w-button">Recipes</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#Partnerships" class="beko_button subnav w-button"
-                                >Partners</a
-                            >
+                            <a href="#Partnerships" class="beko_button subnav w-button">Partners</a>
                         </div>
                     </div>
                 </div>
@@ -1161,14 +1095,10 @@
                             <a href="#about" class="beko_button subnav w-button">About</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#hk_project" class="beko_button subnav w-button"
-                                >Projects</a
-                            >
+                            <a href="#hk_project" class="beko_button subnav w-button">Projects</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#council" class="beko_button subnav w-button"
-                                >Council</a
-                            >
+                            <a href="#council" class="beko_button subnav w-button">Council</a>
                         </div>
                         <div class="div_flex flex_vertical lr_margin_32px">
                             <a href="#top" class="link-block-2 w-inline-block">
@@ -1361,19 +1291,13 @@
                             </a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#appliances" class="beko_button subnav w-button"
-                                >Appliances</a
-                            >
+                            <a href="#appliances" class="beko_button subnav w-button">Appliances</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#recipes" class="beko_button subnav w-button"
-                                >Recipes</a
-                            >
+                            <a href="#recipes" class="beko_button subnav w-button">Recipes</a>
                         </div>
                         <div class="div_flex flex_vertical no_min_w">
-                            <a href="#Partnerships" class="beko_button subnav w-button"
-                                >Partners</a
-                            >
+                            <a href="#Partnerships" class="beko_button subnav w-button">Partners</a>
                         </div>
                     </div>
                 </div>
@@ -1409,16 +1333,15 @@
                                         class="lottie-animation resp-d-none"
                                     ></div>
                                     <h2 class="heading m white heading-resp">
-                                        It starts with a foundation of revolutionary,
-                                        energy-saving appliances.
+                                        It starts with a foundation of revolutionary, energy-saving
+                                        appliances.
                                     </h2>
                                     <div class="spacer _16px"></div>
                                     <div class="body_text m white content-resp">
-                                        Our products are purposefully engineered to make
-                                        it easier for our customers to lead healthier,
-                                        happier lives. They begin their life being
-                                        manufactured in our carbon-neutral factories,
-                                        using a wide array of recycled materials in their
+                                        Our products are purposefully engineered to make it easier
+                                        for our customers to lead healthier, happier lives. They
+                                        begin their life being manufactured in our carbon-neutral
+                                        factories, using a wide array of recycled materials in their
                                         production.
                                     </div>
                                     <div class="spacer _56px"></div>
@@ -1481,21 +1404,18 @@
                                         class="lottie-animation resp-d-none"
                                     ></div>
                                     <h2 class="heading m white heading-resp">
-                                        We work with a select group of like-minded kitchen
-                                        designers to bring these spaces to life.
+                                        We work with a select group of like-minded kitchen designers
+                                        to bring these spaces to life.
                                     </h2>
                                     <div class="spacer _16px"></div>
                                     <div class="body_text m white content-resp">
-                                        Product design and kitchen design go hand in hand,
-                                        which is why we bring our kitchen designers in at
-                                        the beginning of the process to help guide our
-                                        product innovations. Form and function, working
-                                        together seamlessly.
+                                        Product design and kitchen design go hand in hand, which is
+                                        why we bring our kitchen designers in at the beginning of
+                                        the process to help guide our product innovations. Form and
+                                        function, working together seamlessly.
                                     </div>
                                     <div class="spacer _56px"></div>
-                                    <a
-                                        href="#council"
-                                        class="beko_button secondary teal w-button"
+                                    <a href="#council" class="beko_button secondary teal w-button"
                                         >View Our Council</a
                                     >
                                 </div>
@@ -1535,23 +1455,20 @@
                                         class="lottie-animation resp-d-none"
                                     ></div>
                                     <h2 class="heading m white heading-resp">
-                                        We partner with some of the world’s foremost
-                                        nutritionists to understand the best things to
-                                        prepare in a Healthy Kitchen.
+                                        We partner with some of the world’s foremost nutritionists
+                                        to understand the best things to prepare in a Healthy
+                                        Kitchen.
                                     </h2>
                                     <div class="spacer _16px"></div>
                                     <div class="body_text m white content-resp">
-                                        Our partnership with Dole Food Company is one such
-                                        example. Dole and Beko share twin commitment to
-                                        sustainable, healthy living and bringing our two
-                                        brands together will put nutrition, recipe-prep
-                                        and food preservation at the forefront of American
-                                        kitchen design.
+                                        Our partnership with Dole Food Company is one such example.
+                                        Dole and Beko share twin commitment to sustainable, healthy
+                                        living and bringing our two brands together will put
+                                        nutrition, recipe-prep and food preservation at the
+                                        forefront of American kitchen design.
                                     </div>
                                     <div class="spacer _56px"></div>
-                                    <a
-                                        href="#council"
-                                        class="beko_button secondary teal w-button"
+                                    <a href="#council" class="beko_button secondary teal w-button"
                                         >View Our Partners</a
                                     >
                                     <div class="spacer _56px"></div>
@@ -1614,18 +1531,16 @@
                                         class="lottie-animation resp-d-none"
                                     ></div>
                                     <h2 class="heading m white heading-resp">
-                                        You can’t have a Healthy Kitchen without a healthy
-                                        planet.
+                                        You can’t have a Healthy Kitchen without a healthy planet.
                                     </h2>
                                     <div class="spacer _16px"></div>
                                     <div class="body_text m white content-resp">
-                                        Beko is firmly committed to sustainability and the
-                                        long-term health of our planet. But we can’t do it
-                                        alone. It is the bringing together of like-minded
-                                        individuals and corporations who share our vision
-                                        to reimagine the American kitchen and beyond that
-                                        will ultimately lead to a healthier, happier world
-                                        for us all.
+                                        Beko is firmly committed to sustainability and the long-term
+                                        health of our planet. But we can’t do it alone. It is the
+                                        bringing together of like-minded individuals and
+                                        corporations who share our vision to reimagine the American
+                                        kitchen and beyond that will ultimately lead to a healthier,
+                                        happier world for us all.
                                     </div>
                                 </div>
                                 <div class="color_background"></div>
@@ -1715,8 +1630,8 @@
                                     class="header_text-move"
                                 >
                                     <h2 class="is--alt-text">
-                                        At Beko, we are committed to bringing the Healthy
-                                        Kitchen to life.
+                                        At Beko, we are committed to bringing the Healthy Kitchen to
+                                        life.
                                     </h2>
                                 </div>
                             </div>
@@ -1727,8 +1642,7 @@
                                     class="header_text-move"
                                 >
                                     <h2 class="is--alt-text">
-                                        By partnering with  like-minded individuals and
-                                        companies,
+                                        By partnering with  like-minded individuals and companies,
                                     </h2>
                                 </div>
                             </div>
@@ -1738,9 +1652,7 @@
                                     style="opacity: 0"
                                     class="header_text-move"
                                 >
-                                    <h2 class="is--alt-text">
-                                        this vision has become a reality.
-                                    </h2>
+                                    <h2 class="is--alt-text">this vision has become a reality.</h2>
                                 </div>
                             </div>
                         </div>
@@ -1764,14 +1676,12 @@
                                             id="w-node-a868bf18-c935-ac02-8f51-07999cce3b06-e53849ae"
                                             class="body_text m white"
                                         >
-                                            The first of many Healthy Kitchens to come is
-                                            currently under construction in Santa Monica,
-                                            California. <br /><strong
-                                                >View Our Trailer</strong
-                                            >
-                                            or <strong>Sign Up</strong>  to follow the
-                                            progress on this and other Healthy Kitchen
-                                            projects that are currently in the works:
+                                            The first of many Healthy Kitchens to come is currently
+                                            under construction in Santa Monica, California.
+                                            <br /><strong>View Our Trailer</strong> or
+                                            <strong>Sign Up</strong>  to follow the progress on this
+                                            and other Healthy Kitchen projects that are currently in
+                                            the works:
                                         </div>
                                         <div class="spacer _48px"></div>
                                         <div class="div-block-15 stick_btn_resp">
@@ -1810,11 +1720,7 @@
                                     <div
                                         id="w-node-ff62fb86-d6d2-25cf-a436-3b5321325454-e53849ae"
                                         class="w-layout-grid grid-coucil-sketches council_resp"
-                                        style="
-                                            display: flex;
-                                            width: 100%;
-                                            justify-content: center;
-                                        "
+                                        style="display: flex; width: 100%; justify-content: center"
                                     >
                                         <div
                                             id="w-node-_43d509a4-2bf4-4839-50fe-f3f5d5ba6e0c-e53849ae"
@@ -1842,17 +1748,16 @@
                                                     <h3
                                                         class="heading s teal align-left activeModal"
                                                     >
-                                                        MaryJo Camp, Healthy Kitchen
-                                                        Design
+                                                        MaryJo Camp, Healthy Kitchen Design
                                                     </h3>
                                                 </a>
                                                 <div class="spacer _8px"></div>
                                                 <div
                                                     class="body_text m white align-left showCouncilModal"
                                                 >
-                                                    Click here to learn more about this
-                                                    exciting Healthy Kitchen Design by our
-                                                    Council Member MaryJo Camp.
+                                                    Click here to learn more about this exciting
+                                                    Healthy Kitchen Design by our Council Member
+                                                    MaryJo Camp.
                                                 </div>
                                             </div>
                                         </div>
@@ -1955,10 +1860,7 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    id="council"
-                    class="section_hk_video_and_renderings wf-section council_tab"
-                >
+                <div id="council" class="section_hk_video_and_renderings wf-section council_tab">
                     <div class="spacer _160px"></div>
                     <div class="container-_global direction_horizontal w-container">
                         <div class="wrapper_image_grid">
@@ -1999,19 +1901,16 @@
                         </div>
                         <div class="copy_block hk_council_intro">
                             <div class="content_block desktop">
-                                <h1 class="heading">
-                                    Introducing the Healthy Kitchen Council
-                                </h1>
+                                <h1 class="heading">Introducing the Healthy Kitchen Council</h1>
                                 <div class="spacer _16px"></div>
                                 <div class="body_text">
-                                    Our Beko Healthy Kitchen Council are extraordinary
-                                    experts were asked to join us to inform and inspire
-                                    the Beko brand as we bring a healthy kitchen to life.
-                                    <br /><br />We collaborate with our Healthy Kitchen
-                                    Council Members to share their knowledge and
-                                    brainstorm ideas around design, sustainability, and
-                                    wellness in the kitchen.<br /><br />Watch our Healthy
-                                    Kitchen Council Video for more info.<br />
+                                    Our Beko Healthy Kitchen Council are extraordinary experts were
+                                    asked to join us to inform and inspire the Beko brand as we
+                                    bring a healthy kitchen to life.
+                                    <br /><br />We collaborate with our Healthy Kitchen Council
+                                    Members to share their knowledge and brainstorm ideas around
+                                    design, sustainability, and wellness in the kitchen.<br /><br />Watch
+                                    our Healthy Kitchen Council Video for more info.<br />
                                 </div>
                                 <div class="spacer _48px"></div>
                                 <div>
@@ -2041,32 +1940,26 @@
                         <div class="w-slider-mask">
                             <div class="w-slide"></div>
                             <div class="w-slide">
-                                <div
-                                    class="container-_global direction_horizontal w-container"
-                                >
+                                <div class="container-_global direction_horizontal w-container">
                                     <div class="copy_block">
                                         <div class="content_block">
-                                            <h1 class="heading">
-                                                Healthy Kitchen Design Concept
-                                            </h1>
+                                            <h1 class="heading">Healthy Kitchen Design Concept</h1>
                                             <div class="body_text padding_bottom">
                                                 Design Firm – Aiden Design
                                             </div>
                                             <div class="spacer _16px"></div>
                                             <div class="body_text">
-                                                Our Beko Healthy Kitchen Council are
-                                                extraordinary experts were asked to join
-                                                us to inform and inspire the Beko brand as
-                                                we bring a healthy kitchen to life.
-                                                <br /><br />We collaborate with our
-                                                Healthy Kitchen Council Members to share
-                                                their knowledge and brainstorm ideas
-                                                around design, sustainability, and
+                                                Our Beko Healthy Kitchen Council are extraordinary
+                                                experts were asked to join us to inform and inspire
+                                                the Beko brand as we bring a healthy kitchen to
+                                                life.
+                                                <br /><br />We collaborate with our Healthy Kitchen
+                                                Council Members to share their knowledge and
+                                                brainstorm ideas around design, sustainability, and
                                                 wellness in the kitchen.<br /><br /><strong
-                                                    >Watch our Healthy Kitchen Council
-                                                    Video for more info.<br />And see our
-                                                    Council member designs for the
-                                                    ultimate Healthy Kitchen.
+                                                    >Watch our Healthy Kitchen Council Video for
+                                                    more info.<br />And see our Council member
+                                                    designs for the ultimate Healthy Kitchen.
                                                 </strong>
                                             </div>
                                             <div class="spacer _32px"></div>
@@ -2184,32 +2077,26 @@
                                 </div>
                             </div>
                             <div class="w-slide">
-                                <div
-                                    class="container-_global direction_horizontal w-container"
-                                >
+                                <div class="container-_global direction_horizontal w-container">
                                     <div class="copy_block">
                                         <div class="content_block">
-                                            <h1 class="heading">
-                                                Healthy Kitchen Design Concept
-                                            </h1>
+                                            <h1 class="heading">Healthy Kitchen Design Concept</h1>
                                             <div class="body_text padding_bottom">
                                                 Design Firm – Dream Kitchen Builders
                                             </div>
                                             <div class="spacer _16px"></div>
                                             <div class="body_text">
-                                                Our Beko Healthy Kitchen Council are
-                                                extraordinary experts were asked to join
-                                                us to inform and inspire the Beko brand as
-                                                we bring a healthy kitchen to life.
-                                                <br /><br />We collaborate with our
-                                                Healthy Kitchen Council Members to share
-                                                their knowledge and brainstorm ideas
-                                                around design, sustainability, and
+                                                Our Beko Healthy Kitchen Council are extraordinary
+                                                experts were asked to join us to inform and inspire
+                                                the Beko brand as we bring a healthy kitchen to
+                                                life.
+                                                <br /><br />We collaborate with our Healthy Kitchen
+                                                Council Members to share their knowledge and
+                                                brainstorm ideas around design, sustainability, and
                                                 wellness in the kitchen.<br /><br /><strong
-                                                    >Watch our Healthy Kitchen Council
-                                                    Video for more info.<br />And see our
-                                                    Council member designs for the
-                                                    ultimate Healthy Kitchen.
+                                                    >Watch our Healthy Kitchen Council Video for
+                                                    more info.<br />And see our Council member
+                                                    designs for the ultimate Healthy Kitchen.
                                                 </strong>
                                             </div>
                                             <div class="spacer _32px"></div>
@@ -2323,33 +2210,26 @@
                                 </div>
                             </div>
                             <div class="w-slide">
-                                <div
-                                    class="container-_global direction_horizontal w-container"
-                                >
+                                <div class="container-_global direction_horizontal w-container">
                                     <div class="copy_block">
                                         <div class="content_block">
-                                            <h1 class="heading">
-                                                Healthy Kitchen Design Concept
-                                            </h1>
+                                            <h1 class="heading">Healthy Kitchen Design Concept</h1>
                                             <div class="body_text padding_bottom">
-                                                Design Firm – Garcia Cabinetmakers and
-                                                KBtribechat
+                                                Design Firm – Garcia Cabinetmakers and KBtribechat
                                             </div>
                                             <div class="spacer _16px"></div>
                                             <div class="body_text">
-                                                Our Beko Healthy Kitchen Council are
-                                                extraordinary experts were asked to join
-                                                us to inform and inspire the Beko brand as
-                                                we bring a healthy kitchen to life.
-                                                <br /><br />We collaborate with our
-                                                Healthy Kitchen Council Members to share
-                                                their knowledge and brainstorm ideas
-                                                around design, sustainability, and
+                                                Our Beko Healthy Kitchen Council are extraordinary
+                                                experts were asked to join us to inform and inspire
+                                                the Beko brand as we bring a healthy kitchen to
+                                                life.
+                                                <br /><br />We collaborate with our Healthy Kitchen
+                                                Council Members to share their knowledge and
+                                                brainstorm ideas around design, sustainability, and
                                                 wellness in the kitchen.<br /><br /><strong
-                                                    >Watch our Healthy Kitchen Council
-                                                    Video for more info.<br />And see our
-                                                    Council member designs for the
-                                                    ultimate Healthy Kitchen.
+                                                    >Watch our Healthy Kitchen Council Video for
+                                                    more info.<br />And see our Council member
+                                                    designs for the ultimate Healthy Kitchen.
                                                 </strong>
                                             </div>
                                             <div class="spacer _32px"></div>
@@ -2463,32 +2343,26 @@
                                 </div>
                             </div>
                             <div class="w-slide">
-                                <div
-                                    class="container-_global direction_horizontal w-container"
-                                >
+                                <div class="container-_global direction_horizontal w-container">
                                     <div class="copy_block">
                                         <div class="content_block">
-                                            <h1 class="heading">
-                                                Healthy Kitchen Design Concept
-                                            </h1>
+                                            <h1 class="heading">Healthy Kitchen Design Concept</h1>
                                             <div class="body_text padding_bottom">
                                                 Design Firm – DesignCamp
                                             </div>
                                             <div class="spacer _16px"></div>
                                             <div class="body_text">
-                                                Our Beko Healthy Kitchen Council are
-                                                extraordinary experts were asked to join
-                                                us to inform and inspire the Beko brand as
-                                                we bring a healthy kitchen to life.
-                                                <br /><br />We collaborate with our
-                                                Healthy Kitchen Council Members to share
-                                                their knowledge and brainstorm ideas
-                                                around design, sustainability, and
+                                                Our Beko Healthy Kitchen Council are extraordinary
+                                                experts were asked to join us to inform and inspire
+                                                the Beko brand as we bring a healthy kitchen to
+                                                life.
+                                                <br /><br />We collaborate with our Healthy Kitchen
+                                                Council Members to share their knowledge and
+                                                brainstorm ideas around design, sustainability, and
                                                 wellness in the kitchen.<br /><br /><strong
-                                                    >Watch our Healthy Kitchen Council
-                                                    Video for more info.<br />And see our
-                                                    Council member designs for the
-                                                    ultimate Healthy Kitchen.
+                                                    >Watch our Healthy Kitchen Council Video for
+                                                    more info.<br />And see our Council member
+                                                    designs for the ultimate Healthy Kitchen.
                                                 </strong>
                                             </div>
                                             <div class="spacer _32px"></div>
@@ -2602,32 +2476,26 @@
                                 </div>
                             </div>
                             <div class="w-slide">
-                                <div
-                                    class="container-_global direction_horizontal w-container"
-                                >
+                                <div class="container-_global direction_horizontal w-container">
                                     <div class="copy_block">
                                         <div class="content_block">
-                                            <h1 class="heading">
-                                                Healthy Kitchen Design Concept
-                                            </h1>
+                                            <h1 class="heading">Healthy Kitchen Design Concept</h1>
                                             <div class="body_text padding_bottom">
                                                 Design Firm – A Kitchen That Works
                                             </div>
                                             <div class="spacer _16px"></div>
                                             <div class="body_text">
-                                                Our Beko Healthy Kitchen Council are
-                                                extraordinary experts were asked to join
-                                                us to inform and inspire the Beko brand as
-                                                we bring a healthy kitchen to life.
-                                                <br /><br />We collaborate with our
-                                                Healthy Kitchen Council Members to share
-                                                their knowledge and brainstorm ideas
-                                                around design, sustainability, and
+                                                Our Beko Healthy Kitchen Council are extraordinary
+                                                experts were asked to join us to inform and inspire
+                                                the Beko brand as we bring a healthy kitchen to
+                                                life.
+                                                <br /><br />We collaborate with our Healthy Kitchen
+                                                Council Members to share their knowledge and
+                                                brainstorm ideas around design, sustainability, and
                                                 wellness in the kitchen.<br /><br /><strong
-                                                    >Watch our Healthy Kitchen Council
-                                                    Video for more info.<br />And see our
-                                                    Council member designs for the
-                                                    ultimate Healthy Kitchen.
+                                                    >Watch our Healthy Kitchen Council Video for
+                                                    more info.<br />And see our Council member
+                                                    designs for the ultimate Healthy Kitchen.
                                                 </strong>
                                             </div>
                                             <div class="spacer _32px"></div>
@@ -2770,12 +2638,8 @@
                                     <div id="hkc_mobile_image">
                                         <!-- HERE MOBILE COUNCIL DATA WILL BE LOADED -->
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 0)"
-                                        >&#10094;
-                                    </a>
-                                    <a class="next" onclick="plusSlides(1, 0)"
-                                        >&#10095;
-                                    </a>
+                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094; </a>
+                                    <a class="next" onclick="plusSlides(1, 0)">&#10095; </a>
                                     <div class="dot_wrapper" id="dot0"></div>
                                 </div>
                             </div>
@@ -2784,12 +2648,8 @@
                                     <div id="appliance_mobile_image">
                                         <!-- HERE APPLIANCE MOBILE DATA WILL BE LOADED -->
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 1)"
-                                        >&#10094;
-                                    </a>
-                                    <a class="next" onclick="plusSlides(1, 1)"
-                                        >&#10095;
-                                    </a>
+                                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094; </a>
+                                    <a class="next" onclick="plusSlides(1, 1)">&#10095; </a>
                                     <div class="dot_wrapper" id="dot1"></div>
                                 </div>
                             </div>
@@ -2798,12 +2658,8 @@
                                     <div id="recipes_mobile_image">
                                         <!-- HERE RECIPES MOBILE DATA WILL BE LOADED -->
                                     </div>
-                                    <a class="prev" onclick="plusSlides(-1, 2)"
-                                        >&#10094;
-                                    </a>
-                                    <a class="next" onclick="plusSlides(1, 2)"
-                                        >&#10095;
-                                    </a>
+                                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094; </a>
+                                    <a class="next" onclick="plusSlides(1, 2)">&#10095; </a>
                                     <div class="dot_wrapper">
                                         <div class="dot2"></div>
                                         <div class="dot2"></div>
@@ -2900,11 +2756,11 @@
                                     <div
                                         class="partner_text body_text font-color-white align-center"
                                     >
-                                        Beko and Dole have signed a strategic alliance
-                                        agreement that brings two of the world’s most
-                                        health-minded and <br />sustainable brands
-                                        together to make the American kitchen a healthier,
-                                        more earth-friendly place in 2022 and beyond.
+                                        Beko and Dole have signed a strategic alliance agreement
+                                        that brings two of the world’s most health-minded and
+                                        <br />sustainable brands together to make the American
+                                        kitchen a healthier, more earth-friendly place in 2022 and
+                                        beyond.
                                     </div>
                                     <div class="spacer _32px resp-d-none"></div>
                                     <img
@@ -2938,10 +2794,7 @@
                 <div class="spacer _56px"></div>
                 <div class="div_flex flex_horizontal">
                     <div class="div_flex flex_vertical">
-                        <a
-                            href="https://www.beko.com/us-en/brochure-maker"
-                            target="_blank"
-                        >
+                        <a href="https://www.beko.com/us-en/brochure-maker" target="_blank">
                             <img
                                 src="images/brochuremaker.png"
                                 loading="lazy"
@@ -2949,10 +2802,7 @@
                                 class="icon_designer_tools _64px"
                             />
                         </a>
-                        <a
-                            href="https://www.beko.com/us-en/brochure-maker"
-                            target="_blank"
-                        >
+                        <a href="https://www.beko.com/us-en/brochure-maker" target="_blank">
                             <div class="spacer _32px"></div>
                             <div class="heading s blue">Brochure Maker</div>
                         </a>
@@ -2986,10 +2836,7 @@
                         </a>
                     </div>
                     <div class="div_flex flex_vertical">
-                        <a
-                            href="https://www.beko.com/us-en/request-a-catalog"
-                            target="_blank"
-                        >
+                        <a href="https://www.beko.com/us-en/request-a-catalog" target="_blank">
                             <img
                                 src="images/brochuremaker.png"
                                 loading="lazy"
@@ -2997,10 +2844,7 @@
                                 class="icon_designer_tools _64px"
                             />
                         </a>
-                        <a
-                            href="https://www.beko.com/us-en/request-a-catalog"
-                            target="_blank"
-                        >
+                        <a href="https://www.beko.com/us-en/request-a-catalog" target="_blank">
                             <div class="spacer _32px"></div>
                             <div class="heading s blue">Request A Catalog</div>
                         </a>
@@ -3070,8 +2914,7 @@
                         <div class="spacer _16px"></div>
                         <div class="body_text font-color-white signup-text fs_20">
                             Sign up for ongoing news about the Healthy Kitchen. Enter your
-                            information below to stay up to date on all of the latest
-                            developments.
+                            information below to stay up to date on all of the latest developments.
                         </div>
                         <div class="spacer _32px"></div>
                         <div class="form-block w-form">
@@ -3111,9 +2954,7 @@
                                 <div>Thank you! Your submission has been received!</div>
                             </div>
                             <div class="w-form-fail">
-                                <div>
-                                    Oops! Something went wrong while submitting the form.
-                                </div>
+                                <div>Oops! Something went wrong while submitting the form.</div>
                             </div>
                         </div>
                     </div>
@@ -3159,7 +3000,6 @@
         <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-        <script src="https://player.vimeo.com/api/player.js"></script>
 
         <!-- __________________________________________ -->
         <!-- LOAD IMAGES AND VIDEOS -->
@@ -3174,7 +3014,7 @@
         <script src="js/carousel.js"></script>
         <!-- STICKY NAVBAR FOR MOBILE -->
         <script src="js/sticky.js"></script>
-        <!-- __________________________________________ -->        
+        <!-- __________________________________________ -->
 
         <script src="js/gsap.js"></script>
         <script src="js/webflow.js" type="text/javascript"></script>
